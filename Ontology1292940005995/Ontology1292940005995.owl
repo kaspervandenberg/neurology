@@ -1,0 +1,301 @@
+<?xml version="1.0"?>
+
+
+<!DOCTYPE rdf:RDF [
+    <!ENTITY owl "http://www.w3.org/2002/07/owl#" >
+    <!ENTITY dc "http://purl.org/dc/elements/1.1/" >
+    <!ENTITY xsd "http://www.w3.org/2001/XMLSchema#" >
+    <!ENTITY rdfs "http://www.w3.org/2000/01/rdf-schema#" >
+    <!ENTITY rdf "http://www.w3.org/1999/02/22-rdf-syntax-ns#" >
+]>
+
+
+<rdf:RDF xmlns="http://www.kaspervandenberg.net/2010/ontologies/Ontology1292940005995.owl#"
+     xml:base="http://www.kaspervandenberg.net/2010/ontologies/Ontology1292940005995.owl"
+     xmlns:dc="http://purl.org/dc/elements/1.1/"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+    <owl:Ontology rdf:about="http://www.kaspervandenberg.net/2010/ontologies/Ontology1292940005995.owl">
+        <dc:date rdf:datatype="&xsd;date">2010-12-21</dc:date>
+        <dc:creator rdf:datatype="&xsd;string">Kasper van den Berg</dc:creator>
+        <dc:title rdf:datatype="&xsd;string">Neurological concepts</dc:title>
+        <dc:subject rdf:datatype="&xsd;string">Neurology</dc:subject>
+        <rdfs:comment rdf:datatype="&xsd;string">This ontology models my understanding of neurological concepts.</rdfs:comment>
+        <owl:versionIRI rdf:resource="http://www.kaspervandenberg.net/2010/ontologies/Ontology1292940005995-20101221.owl"/>
+    </owl:Ontology>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Annotation properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    <owl:AnnotationProperty rdf:about="&dc;creator"/>
+    <owl:AnnotationProperty rdf:about="&rdfs;seeAlso"/>
+    <owl:AnnotationProperty rdf:about="&dc;subject"/>
+    <owl:AnnotationProperty rdf:about="&dc;date"/>
+    <owl:AnnotationProperty rdf:about="&dc;description"/>
+    <owl:AnnotationProperty rdf:about="&rdfs;comment"/>
+    <owl:AnnotationProperty rdf:about="&dc;title"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Datatypes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.w3.org/2001/XMLSchema#ENTITY -->
+
+    <rdfs:Datatype rdf:about="&xsd;ENTITY"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.kaspervandenberg.net/2010/ontologies/Ontology1292940005995.owl#Amygdala -->
+
+    <owl:Class rdf:about="http://www.kaspervandenberg.net/2010/ontologies/Ontology1292940005995.owl#Amygdala">
+        <rdfs:subClassOf rdf:resource="http://www.kaspervandenberg.net/2010/ontologies/Ontology1292940005995.owl#BrainArea"/>
+        <rdfs:comment rdf:datatype="&xsd;string">Involved in emotions</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.kaspervandenberg.net/2010/ontologies/Ontology1292940005995.owl#Astrocyte -->
+
+    <owl:Class rdf:about="http://www.kaspervandenberg.net/2010/ontologies/Ontology1292940005995.owl#Astrocyte">
+        <rdfs:subClassOf rdf:resource="http://www.kaspervandenberg.net/2010/ontologies/Ontology1292940005995.owl#GlialCel"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.kaspervandenberg.net/2010/ontologies/Ontology1292940005995.owl#Axon -->
+
+    <owl:Class rdf:about="http://www.kaspervandenberg.net/2010/ontologies/Ontology1292940005995.owl#Axon">
+        <dc:description rdf:datatype="&xsd;string">Emits signals</dc:description>
+    </owl:Class>
+    
+
+
+    <!-- http://www.kaspervandenberg.net/2010/ontologies/Ontology1292940005995.owl#Belief -->
+
+    <owl:Class rdf:about="http://www.kaspervandenberg.net/2010/ontologies/Ontology1292940005995.owl#Belief">
+        <rdfs:subClassOf rdf:resource="http://www.kaspervandenberg.net/2010/ontologies/Ontology1292940005995.owl#Meme"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.kaspervandenberg.net/2010/ontologies/Ontology1292940005995.owl#BrainArea -->
+
+    <owl:Class rdf:about="http://www.kaspervandenberg.net/2010/ontologies/Ontology1292940005995.owl#BrainArea">
+        <rdfs:subClassOf rdf:resource="&owl;Thing"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.kaspervandenberg.net/2010/ontologies/Ontology1292940005995.owl#Cel -->
+
+    <owl:Class rdf:about="http://www.kaspervandenberg.net/2010/ontologies/Ontology1292940005995.owl#Cel"/>
+    
+
+
+    <!-- http://www.kaspervandenberg.net/2010/ontologies/Ontology1292940005995.owl#Cerebral_cortex -->
+
+    <owl:Class rdf:about="http://www.kaspervandenberg.net/2010/ontologies/Ontology1292940005995.owl#Cerebral_cortex">
+        <rdfs:subClassOf rdf:resource="http://www.kaspervandenberg.net/2010/ontologies/Ontology1292940005995.owl#BrainArea"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.kaspervandenberg.net/2010/ontologies/Ontology1292940005995.owl#Connectome -->
+
+    <owl:Class rdf:about="http://www.kaspervandenberg.net/2010/ontologies/Ontology1292940005995.owl#Connectome"/>
+    
+
+
+    <!-- http://www.kaspervandenberg.net/2010/ontologies/Ontology1292940005995.owl#Consiousness -->
+
+    <owl:Class rdf:about="http://www.kaspervandenberg.net/2010/ontologies/Ontology1292940005995.owl#Consiousness"/>
+    
+
+
+    <!-- http://www.kaspervandenberg.net/2010/ontologies/Ontology1292940005995.owl#Dendrite -->
+
+    <owl:Class rdf:about="http://www.kaspervandenberg.net/2010/ontologies/Ontology1292940005995.owl#Dendrite">
+        <dc:description rdf:datatype="&xsd;string">Receives signals</dc:description>
+        <rdfs:seeAlso rdf:datatype="&xsd;ENTITY">http://blogs.discovermagazine.com/gallery/albums/brain-portraits/p-124.jpg</rdfs:seeAlso>
+    </owl:Class>
+    
+
+
+    <!-- http://www.kaspervandenberg.net/2010/ontologies/Ontology1292940005995.owl#Frontal_lobe -->
+
+    <owl:Class rdf:about="http://www.kaspervandenberg.net/2010/ontologies/Ontology1292940005995.owl#Frontal_lobe">
+        <rdfs:subClassOf rdf:resource="http://www.kaspervandenberg.net/2010/ontologies/Ontology1292940005995.owl#BrainArea"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.kaspervandenberg.net/2010/ontologies/Ontology1292940005995.owl#Function -->
+
+    <owl:Class rdf:about="http://www.kaspervandenberg.net/2010/ontologies/Ontology1292940005995.owl#Function"/>
+    
+
+
+    <!-- http://www.kaspervandenberg.net/2010/ontologies/Ontology1292940005995.owl#GlialCel -->
+
+    <owl:Class rdf:about="http://www.kaspervandenberg.net/2010/ontologies/Ontology1292940005995.owl#GlialCel">
+        <rdfs:subClassOf rdf:resource="http://www.kaspervandenberg.net/2010/ontologies/Ontology1292940005995.owl#Cel"/>
+        <dc:description rdf:datatype="&xsd;string">Long tought as only support tissue, but they do more.</dc:description>
+    </owl:Class>
+    
+
+
+    <!-- http://www.kaspervandenberg.net/2010/ontologies/Ontology1292940005995.owl#Hippocampus -->
+
+    <owl:Class rdf:about="http://www.kaspervandenberg.net/2010/ontologies/Ontology1292940005995.owl#Hippocampus">
+        <rdfs:subClassOf rdf:resource="http://www.kaspervandenberg.net/2010/ontologies/Ontology1292940005995.owl#BrainArea"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.kaspervandenberg.net/2010/ontologies/Ontology1292940005995.owl#Learning -->
+
+    <owl:Class rdf:about="http://www.kaspervandenberg.net/2010/ontologies/Ontology1292940005995.owl#Learning">
+        <rdfs:subClassOf rdf:resource="http://www.kaspervandenberg.net/2010/ontologies/Ontology1292940005995.owl#Memory"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.kaspervandenberg.net/2010/ontologies/Ontology1292940005995.owl#Meme -->
+
+    <owl:Class rdf:about="http://www.kaspervandenberg.net/2010/ontologies/Ontology1292940005995.owl#Meme"/>
+    
+
+
+    <!-- http://www.kaspervandenberg.net/2010/ontologies/Ontology1292940005995.owl#Memory -->
+
+    <owl:Class rdf:about="http://www.kaspervandenberg.net/2010/ontologies/Ontology1292940005995.owl#Memory">
+        <rdfs:subClassOf rdf:resource="http://www.kaspervandenberg.net/2010/ontologies/Ontology1292940005995.owl#Function"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.kaspervandenberg.net/2010/ontologies/Ontology1292940005995.owl#Neo_cortex -->
+
+    <owl:Class rdf:about="http://www.kaspervandenberg.net/2010/ontologies/Ontology1292940005995.owl#Neo_cortex">
+        <rdfs:subClassOf rdf:resource="http://www.kaspervandenberg.net/2010/ontologies/Ontology1292940005995.owl#BrainArea"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.kaspervandenberg.net/2010/ontologies/Ontology1292940005995.owl#Neuron -->
+
+    <owl:Class rdf:about="http://www.kaspervandenberg.net/2010/ontologies/Ontology1292940005995.owl#Neuron">
+        <rdfs:subClassOf rdf:resource="http://www.kaspervandenberg.net/2010/ontologies/Ontology1292940005995.owl#Cel"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.kaspervandenberg.net/2010/ontologies/Ontology1292940005995.owl#Neurotransmitter -->
+
+    <owl:Class rdf:about="http://www.kaspervandenberg.net/2010/ontologies/Ontology1292940005995.owl#Neurotransmitter"/>
+    
+
+
+    <!-- http://www.kaspervandenberg.net/2010/ontologies/Ontology1292940005995.owl#Olfactory_cortex -->
+
+    <owl:Class rdf:about="http://www.kaspervandenberg.net/2010/ontologies/Ontology1292940005995.owl#Olfactory_cortex">
+        <rdfs:subClassOf rdf:resource="http://www.kaspervandenberg.net/2010/ontologies/Ontology1292940005995.owl#BrainArea"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.kaspervandenberg.net/2010/ontologies/Ontology1292940005995.owl#Soma -->
+
+    <owl:Class rdf:about="http://www.kaspervandenberg.net/2010/ontologies/Ontology1292940005995.owl#Soma">
+        <rdfs:seeAlso rdf:datatype="&xsd;ENTITY">http://blogs.discovermagazine.com/gallery/albums/betterbrain/cover-illustration-stern-et.jpg</rdfs:seeAlso>
+        <rdfs:seeAlso rdf:datatype="&xsd;ENTITY">http://blogs.discovermagazine.com/gallery/albums/brain-portraits/p-124.jpg</rdfs:seeAlso>
+    </owl:Class>
+    
+
+
+    <!-- http://www.kaspervandenberg.net/2010/ontologies/Ontology1292940005995.owl#Synapse -->
+
+    <owl:Class rdf:about="http://www.kaspervandenberg.net/2010/ontologies/Ontology1292940005995.owl#Synapse">
+        <dc:description rdf:datatype="&xsd;string">Space between axon and dendrite.</dc:description>
+    </owl:Class>
+    
+
+
+    <!-- http://www.kaspervandenberg.net/2010/ontologies/Ontology1292940005995.owl#Temporal_cortex -->
+
+    <owl:Class rdf:about="http://www.kaspervandenberg.net/2010/ontologies/Ontology1292940005995.owl#Temporal_cortex">
+        <rdfs:subClassOf rdf:resource="http://www.kaspervandenberg.net/2010/ontologies/Ontology1292940005995.owl#BrainArea"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.kaspervandenberg.net/2010/ontologies/Ontology1292940005995.owl#Thalamus -->
+
+    <owl:Class rdf:about="http://www.kaspervandenberg.net/2010/ontologies/Ontology1292940005995.owl#Thalamus">
+        <rdfs:subClassOf rdf:resource="http://www.kaspervandenberg.net/2010/ontologies/Ontology1292940005995.owl#BrainArea"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.kaspervandenberg.net/2010/ontologies/Ontology1292940005995.owl#Thought -->
+
+    <owl:Class rdf:about="http://www.kaspervandenberg.net/2010/ontologies/Ontology1292940005995.owl#Thought">
+        <rdfs:subClassOf rdf:resource="http://www.kaspervandenberg.net/2010/ontologies/Ontology1292940005995.owl#Meme"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.kaspervandenberg.net/2010/ontologies/Ontology1292940005995.owl#Vision -->
+
+    <owl:Class rdf:about="http://www.kaspervandenberg.net/2010/ontologies/Ontology1292940005995.owl#Vision">
+        <rdfs:subClassOf rdf:resource="http://www.kaspervandenberg.net/2010/ontologies/Ontology1292940005995.owl#Function"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.kaspervandenberg.net/2010/ontologies/Ontology1292940005995.owl#VisualIntegration -->
+
+    <owl:Class rdf:about="http://www.kaspervandenberg.net/2010/ontologies/Ontology1292940005995.owl#VisualIntegration">
+        <rdfs:subClassOf rdf:resource="http://www.kaspervandenberg.net/2010/ontologies/Ontology1292940005995.owl#Function"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.w3.org/2002/07/owl#Thing -->
+
+    <owl:Class rdf:about="&owl;Thing"/>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 3.1.0.20069) http://owlapi.sourceforge.net -->
+
