@@ -7,6 +7,7 @@
     <!ENTITY xsd "http://www.w3.org/2001/XMLSchema#" >
     <!ENTITY rdfs "http://www.w3.org/2000/01/rdf-schema#" >
     <!ENTITY rdf "http://www.w3.org/1999/02/22-rdf-syntax-ns#" >
+    <!ENTITY mereo "http://www.kaspervandenberg.net/2010/ontologies/Ontology1293620364599-20101229.owl#" >
 ]>
 
 
@@ -14,6 +15,7 @@
      xml:base="http://www.kaspervandenberg.net/2010/ontologies/Ontology1292940005995.owl"
      xmlns:dc="http://purl.org/dc/elements/1.1/"
      xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     xmlns:mereo="http://www.kaspervandenberg.net/2010/ontologies/Ontology1293620364599-20101229.owl#"
      xmlns:owl="http://www.w3.org/2002/07/owl#"
      xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
      xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
