@@ -24,6 +24,7 @@
         <dc:subject rdf:datatype="&xsd;string">Neurology</dc:subject>
         <rdfs:comment rdf:datatype="&xsd;string">This ontology models my understanding of neurological concepts.</rdfs:comment>
         <owl:versionIRI rdf:resource="http://www.kaspervandenberg.net/2010/ontologies/Ontology1292940005995-20101221.owl"/>
+        <owl:imports rdf:resource="http://www.kaspervandenberg.net/2010/ontologies/Ontology1293620364599.owl"/>
     </owl:Ontology>
     
 
