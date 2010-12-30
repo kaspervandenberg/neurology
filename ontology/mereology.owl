@@ -43,10 +43,16 @@
         <ObjectProperty IRI="#contains"/>
     </Declaration>
     <Declaration>
+        <ObjectProperty IRI="#contains_one"/>
+    </Declaration>
+    <Declaration>
         <ObjectProperty IRI="#overlap"/>
     </Declaration>
     <Declaration>
         <ObjectProperty IRI="#part_of"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#part_of_one"/>
     </Declaration>
     <Declaration>
         <ObjectProperty IRI="#proper_part_of"/>
@@ -57,6 +63,14 @@
     <Declaration>
         <ObjectProperty IRI="#underlap"/>
     </Declaration>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#contains_one"/>
+        <ObjectProperty IRI="#strictly_contains"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#part_of_one"/>
+        <ObjectProperty IRI="#proper_part_of"/>
+    </SubObjectPropertyOf>
     <SubObjectPropertyOf>
         <ObjectProperty IRI="#proper_part_of"/>
         <ObjectProperty IRI="#part_of"/>
@@ -73,12 +87,24 @@
         <ObjectProperty IRI="#proper_part_of"/>
         <ObjectProperty IRI="#strictly_contains"/>
     </InverseObjectProperties>
+    <FunctionalObjectProperty>
+        <ObjectProperty IRI="#contains_one"/>
+    </FunctionalObjectProperty>
+    <FunctionalObjectProperty>
+        <ObjectProperty IRI="#part_of_one"/>
+    </FunctionalObjectProperty>
     <SymmetricObjectProperty>
         <ObjectProperty IRI="#overlap"/>
     </SymmetricObjectProperty>
     <SymmetricObjectProperty>
         <ObjectProperty IRI="#underlap"/>
     </SymmetricObjectProperty>
+    <AsymmetricObjectProperty>
+        <ObjectProperty IRI="#contains_one"/>
+    </AsymmetricObjectProperty>
+    <AsymmetricObjectProperty>
+        <ObjectProperty IRI="#part_of_one"/>
+    </AsymmetricObjectProperty>
     <AsymmetricObjectProperty>
         <ObjectProperty IRI="#proper_part_of"/>
     </AsymmetricObjectProperty>
@@ -103,6 +129,12 @@
     <ReflexiveObjectProperty>
         <ObjectProperty IRI="#underlap"/>
     </ReflexiveObjectProperty>
+    <IrreflexiveObjectProperty>
+        <ObjectProperty IRI="#contains_one"/>
+    </IrreflexiveObjectProperty>
+    <IrreflexiveObjectProperty>
+        <ObjectProperty IRI="#part_of_one"/>
+    </IrreflexiveObjectProperty>
     <IrreflexiveObjectProperty>
         <ObjectProperty IRI="#proper_part_of"/>
     </IrreflexiveObjectProperty>
