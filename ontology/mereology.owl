@@ -18,11 +18,11 @@
      ontologyIRI="http://www.kaspervandenberg.net/2010/ontologies/mereology.owl"
      versionIRI="http://www.kaspervandenberg.net/2010/ontologies/mereology-20101229.owl">
     <Prefix name="xsd" IRI="http://www.w3.org/2001/XMLSchema#"/>
+    <Prefix name="mereo" IRI="http://www.kaspervandenberg.net/2010/ontologies/mereology.owl#"/>
     <Prefix name="owl" IRI="http://www.w3.org/2002/07/owl#"/>
     <Prefix name="" IRI="http://www.w3.org/2002/07/owl#"/>
     <Prefix name="rdf" IRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#"/>
     <Prefix name="rdfs" IRI="http://www.w3.org/2000/01/rdf-schema#"/>
-    <Prefix name="mereo" IRI="http://www.kaspervandenberg.net/2010/ontologies/mereology.owl#"/>
     <Annotation>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
         <Literal datatypeIRI="&xsd;string">Part-whole relation based on the Mereology axioms in wikipedia.</Literal>
@@ -52,15 +52,26 @@
         <ObjectProperty IRI="#proper_part_of"/>
     </Declaration>
     <Declaration>
+        <ObjectProperty IRI="#strictly_contains"/>
+    </Declaration>
+    <Declaration>
         <ObjectProperty IRI="#underlap"/>
     </Declaration>
     <SubObjectPropertyOf>
         <ObjectProperty IRI="#proper_part_of"/>
         <ObjectProperty IRI="#part_of"/>
     </SubObjectPropertyOf>
-    <InverseObjectProperties>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#strictly_contains"/>
         <ObjectProperty IRI="#contains"/>
+    </SubObjectPropertyOf>
+    <InverseObjectProperties>
         <ObjectProperty IRI="#part_of"/>
+        <ObjectProperty IRI="#contains"/>
+    </InverseObjectProperties>
+    <InverseObjectProperties>
+        <ObjectProperty IRI="#strictly_contains"/>
+        <ObjectProperty IRI="#proper_part_of"/>
     </InverseObjectProperties>
     <SymmetricObjectProperty>
         <ObjectProperty IRI="#overlap"/>
@@ -81,8 +92,8 @@
         <ObjectProperty IRI="#underlap"/>
     </ReflexiveObjectProperty>
     <DisjointObjectProperties>
-        <ObjectProperty IRI="#contains"/>
         <ObjectProperty IRI="#proper_part_of"/>
+        <ObjectProperty IRI="#strictly_contains"/>
     </DisjointObjectProperties>
     <SubObjectPropertyOf>
         <ObjectPropertyChain>
