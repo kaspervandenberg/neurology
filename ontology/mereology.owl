@@ -79,6 +79,12 @@
     <SymmetricObjectProperty>
         <ObjectProperty IRI="#underlap"/>
     </SymmetricObjectProperty>
+    <AsymmetricObjectProperty>
+        <ObjectProperty IRI="#proper_part_of"/>
+    </AsymmetricObjectProperty>
+    <AsymmetricObjectProperty>
+        <ObjectProperty IRI="#strictly_contains"/>
+    </AsymmetricObjectProperty>
     <TransitiveObjectProperty>
         <ObjectProperty IRI="#contains"/>
     </TransitiveObjectProperty>
