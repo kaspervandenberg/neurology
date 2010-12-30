@@ -1,302 +1,272 @@
 <?xml version="1.0"?>
 
 
-<!DOCTYPE rdf:RDF [
-    <!ENTITY owl "http://www.w3.org/2002/07/owl#" >
-    <!ENTITY dc "http://purl.org/dc/elements/1.1/" >
+<!DOCTYPE Ontology [
     <!ENTITY xsd "http://www.w3.org/2001/XMLSchema#" >
+    <!ENTITY xml "http://www.w3.org/XML/1998/namespace" >
     <!ENTITY rdfs "http://www.w3.org/2000/01/rdf-schema#" >
     <!ENTITY rdf "http://www.w3.org/1999/02/22-rdf-syntax-ns#" >
-    <!ENTITY mereo "http://www.kaspervandenberg.net/2010/ontologies/Ontology1293620364599-20101229.owl#" >
 ]>
 
 
-<rdf:RDF xmlns="http://www.kaspervandenberg.net/2010/ontologies/Ontology1292940005995.owl#"
-     xml:base="http://www.kaspervandenberg.net/2010/ontologies/Ontology1292940005995.owl"
-     xmlns:dc="http://purl.org/dc/elements/1.1/"
+<Ontology xmlns="http://www.w3.org/2002/07/owl#"
+     xml:base="http://www.kaspervandenberg.net/2010/ontologies/neurology.owl"
      xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
-     xmlns:mereo="http://www.kaspervandenberg.net/2010/ontologies/Ontology1293620364599-20101229.owl#"
-     xmlns:owl="http://www.w3.org/2002/07/owl#"
      xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
-     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
-    <owl:Ontology rdf:about="http://www.kaspervandenberg.net/2010/ontologies/Ontology1292940005995.owl">
-        <dc:date rdf:datatype="&xsd;date">2010-12-21</dc:date>
-        <dc:creator rdf:datatype="&xsd;string">Kasper van den Berg</dc:creator>
-        <dc:title rdf:datatype="&xsd;string">Neurological concepts</dc:title>
-        <dc:subject rdf:datatype="&xsd;string">Neurology</dc:subject>
-        <rdfs:comment rdf:datatype="&xsd;string">This ontology models my understanding of neurological concepts.</rdfs:comment>
-        <owl:versionIRI rdf:resource="http://www.kaspervandenberg.net/2010/ontologies/Ontology1292940005995-20101221.owl"/>
-        <owl:imports rdf:resource="http://www.kaspervandenberg.net/2010/ontologies/Ontology1293620364599.owl"/>
-    </owl:Ontology>
-    
-
-
-    <!-- 
-    ///////////////////////////////////////////////////////////////////////////////////////
-    //
-    // Annotation properties
-    //
-    ///////////////////////////////////////////////////////////////////////////////////////
-     -->
-
-    <owl:AnnotationProperty rdf:about="&dc;creator"/>
-    <owl:AnnotationProperty rdf:about="&rdfs;seeAlso"/>
-    <owl:AnnotationProperty rdf:about="&dc;subject"/>
-    <owl:AnnotationProperty rdf:about="&dc;date"/>
-    <owl:AnnotationProperty rdf:about="&dc;description"/>
-    <owl:AnnotationProperty rdf:about="&rdfs;comment"/>
-    <owl:AnnotationProperty rdf:about="&dc;title"/>
-    
-
-
-    <!-- 
-    ///////////////////////////////////////////////////////////////////////////////////////
-    //
-    // Datatypes
-    //
-    ///////////////////////////////////////////////////////////////////////////////////////
-     -->
-
-    
-
-
-    <!-- http://www.w3.org/2001/XMLSchema#ENTITY -->
-
-    <rdfs:Datatype rdf:about="&xsd;ENTITY"/>
-    
-
-
-    <!-- 
-    ///////////////////////////////////////////////////////////////////////////////////////
-    //
-    // Classes
-    //
-    ///////////////////////////////////////////////////////////////////////////////////////
-     -->
-
-    
-
-
-    <!-- http://www.kaspervandenberg.net/2010/ontologies/Ontology1292940005995.owl#Amygdala -->
-
-    <owl:Class rdf:about="http://www.kaspervandenberg.net/2010/ontologies/Ontology1292940005995.owl#Amygdala">
-        <rdfs:subClassOf rdf:resource="http://www.kaspervandenberg.net/2010/ontologies/Ontology1292940005995.owl#BrainArea"/>
-        <rdfs:comment rdf:datatype="&xsd;string">Involved in emotions</rdfs:comment>
-    </owl:Class>
-    
-
-
-    <!-- http://www.kaspervandenberg.net/2010/ontologies/Ontology1292940005995.owl#Astrocyte -->
-
-    <owl:Class rdf:about="http://www.kaspervandenberg.net/2010/ontologies/Ontology1292940005995.owl#Astrocyte">
-        <rdfs:subClassOf rdf:resource="http://www.kaspervandenberg.net/2010/ontologies/Ontology1292940005995.owl#GlialCel"/>
-    </owl:Class>
-    
-
-
-    <!-- http://www.kaspervandenberg.net/2010/ontologies/Ontology1292940005995.owl#Axon -->
-
-    <owl:Class rdf:about="http://www.kaspervandenberg.net/2010/ontologies/Ontology1292940005995.owl#Axon">
-        <dc:description rdf:datatype="&xsd;string">Emits signals</dc:description>
-    </owl:Class>
-    
-
-
-    <!-- http://www.kaspervandenberg.net/2010/ontologies/Ontology1292940005995.owl#Belief -->
-
-    <owl:Class rdf:about="http://www.kaspervandenberg.net/2010/ontologies/Ontology1292940005995.owl#Belief">
-        <rdfs:subClassOf rdf:resource="http://www.kaspervandenberg.net/2010/ontologies/Ontology1292940005995.owl#Meme"/>
-    </owl:Class>
-    
-
-
-    <!-- http://www.kaspervandenberg.net/2010/ontologies/Ontology1292940005995.owl#BrainArea -->
-
-    <owl:Class rdf:about="http://www.kaspervandenberg.net/2010/ontologies/Ontology1292940005995.owl#BrainArea">
-        <rdfs:subClassOf rdf:resource="&owl;Thing"/>
-    </owl:Class>
-    
-
-
-    <!-- http://www.kaspervandenberg.net/2010/ontologies/Ontology1292940005995.owl#Cel -->
-
-    <owl:Class rdf:about="http://www.kaspervandenberg.net/2010/ontologies/Ontology1292940005995.owl#Cel"/>
-    
-
-
-    <!-- http://www.kaspervandenberg.net/2010/ontologies/Ontology1292940005995.owl#Cerebral_cortex -->
-
-    <owl:Class rdf:about="http://www.kaspervandenberg.net/2010/ontologies/Ontology1292940005995.owl#Cerebral_cortex">
-        <rdfs:subClassOf rdf:resource="http://www.kaspervandenberg.net/2010/ontologies/Ontology1292940005995.owl#BrainArea"/>
-    </owl:Class>
-    
-
-
-    <!-- http://www.kaspervandenberg.net/2010/ontologies/Ontology1292940005995.owl#Connectome -->
-
-    <owl:Class rdf:about="http://www.kaspervandenberg.net/2010/ontologies/Ontology1292940005995.owl#Connectome"/>
-    
-
-
-    <!-- http://www.kaspervandenberg.net/2010/ontologies/Ontology1292940005995.owl#Consiousness -->
-
-    <owl:Class rdf:about="http://www.kaspervandenberg.net/2010/ontologies/Ontology1292940005995.owl#Consiousness"/>
-    
-
-
-    <!-- http://www.kaspervandenberg.net/2010/ontologies/Ontology1292940005995.owl#Dendrite -->
-
-    <owl:Class rdf:about="http://www.kaspervandenberg.net/2010/ontologies/Ontology1292940005995.owl#Dendrite">
-        <dc:description rdf:datatype="&xsd;string">Receives signals</dc:description>
-        <rdfs:seeAlso rdf:datatype="&xsd;ENTITY">http://blogs.discovermagazine.com/gallery/albums/brain-portraits/p-124.jpg</rdfs:seeAlso>
-    </owl:Class>
-    
-
-
-    <!-- http://www.kaspervandenberg.net/2010/ontologies/Ontology1292940005995.owl#Frontal_lobe -->
-
-    <owl:Class rdf:about="http://www.kaspervandenberg.net/2010/ontologies/Ontology1292940005995.owl#Frontal_lobe">
-        <rdfs:subClassOf rdf:resource="http://www.kaspervandenberg.net/2010/ontologies/Ontology1292940005995.owl#BrainArea"/>
-    </owl:Class>
-    
-
-
-    <!-- http://www.kaspervandenberg.net/2010/ontologies/Ontology1292940005995.owl#Function -->
-
-    <owl:Class rdf:about="http://www.kaspervandenberg.net/2010/ontologies/Ontology1292940005995.owl#Function"/>
-    
-
-
-    <!-- http://www.kaspervandenberg.net/2010/ontologies/Ontology1292940005995.owl#GlialCel -->
-
-    <owl:Class rdf:about="http://www.kaspervandenberg.net/2010/ontologies/Ontology1292940005995.owl#GlialCel">
-        <rdfs:subClassOf rdf:resource="http://www.kaspervandenberg.net/2010/ontologies/Ontology1292940005995.owl#Cel"/>
-        <dc:description rdf:datatype="&xsd;string">Long tought as only support tissue, but they do more.</dc:description>
-    </owl:Class>
-    
-
-
-    <!-- http://www.kaspervandenberg.net/2010/ontologies/Ontology1292940005995.owl#Hippocampus -->
-
-    <owl:Class rdf:about="http://www.kaspervandenberg.net/2010/ontologies/Ontology1292940005995.owl#Hippocampus">
-        <rdfs:subClassOf rdf:resource="http://www.kaspervandenberg.net/2010/ontologies/Ontology1292940005995.owl#BrainArea"/>
-    </owl:Class>
-    
-
-
-    <!-- http://www.kaspervandenberg.net/2010/ontologies/Ontology1292940005995.owl#Learning -->
-
-    <owl:Class rdf:about="http://www.kaspervandenberg.net/2010/ontologies/Ontology1292940005995.owl#Learning">
-        <rdfs:subClassOf rdf:resource="http://www.kaspervandenberg.net/2010/ontologies/Ontology1292940005995.owl#Memory"/>
-    </owl:Class>
-    
-
-
-    <!-- http://www.kaspervandenberg.net/2010/ontologies/Ontology1292940005995.owl#Meme -->
-
-    <owl:Class rdf:about="http://www.kaspervandenberg.net/2010/ontologies/Ontology1292940005995.owl#Meme"/>
-    
-
-
-    <!-- http://www.kaspervandenberg.net/2010/ontologies/Ontology1292940005995.owl#Memory -->
-
-    <owl:Class rdf:about="http://www.kaspervandenberg.net/2010/ontologies/Ontology1292940005995.owl#Memory">
-        <rdfs:subClassOf rdf:resource="http://www.kaspervandenberg.net/2010/ontologies/Ontology1292940005995.owl#Function"/>
-    </owl:Class>
-    
-
-
-    <!-- http://www.kaspervandenberg.net/2010/ontologies/Ontology1292940005995.owl#Neo_cortex -->
-
-    <owl:Class rdf:about="http://www.kaspervandenberg.net/2010/ontologies/Ontology1292940005995.owl#Neo_cortex">
-        <rdfs:subClassOf rdf:resource="http://www.kaspervandenberg.net/2010/ontologies/Ontology1292940005995.owl#BrainArea"/>
-    </owl:Class>
-    
-
-
-    <!-- http://www.kaspervandenberg.net/2010/ontologies/Ontology1292940005995.owl#Neuron -->
-
-    <owl:Class rdf:about="http://www.kaspervandenberg.net/2010/ontologies/Ontology1292940005995.owl#Neuron">
-        <rdfs:subClassOf rdf:resource="http://www.kaspervandenberg.net/2010/ontologies/Ontology1292940005995.owl#Cel"/>
-    </owl:Class>
-    
-
-
-    <!-- http://www.kaspervandenberg.net/2010/ontologies/Ontology1292940005995.owl#Neurotransmitter -->
-
-    <owl:Class rdf:about="http://www.kaspervandenberg.net/2010/ontologies/Ontology1292940005995.owl#Neurotransmitter"/>
-    
-
-
-    <!-- http://www.kaspervandenberg.net/2010/ontologies/Ontology1292940005995.owl#Olfactory_cortex -->
-
-    <owl:Class rdf:about="http://www.kaspervandenberg.net/2010/ontologies/Ontology1292940005995.owl#Olfactory_cortex">
-        <rdfs:subClassOf rdf:resource="http://www.kaspervandenberg.net/2010/ontologies/Ontology1292940005995.owl#BrainArea"/>
-    </owl:Class>
-    
-
-
-    <!-- http://www.kaspervandenberg.net/2010/ontologies/Ontology1292940005995.owl#Soma -->
-
-    <owl:Class rdf:about="http://www.kaspervandenberg.net/2010/ontologies/Ontology1292940005995.owl#Soma">
-        <rdfs:seeAlso rdf:datatype="&xsd;ENTITY">http://blogs.discovermagazine.com/gallery/albums/betterbrain/cover-illustration-stern-et.jpg</rdfs:seeAlso>
-        <rdfs:seeAlso rdf:datatype="&xsd;ENTITY">http://blogs.discovermagazine.com/gallery/albums/brain-portraits/p-124.jpg</rdfs:seeAlso>
-    </owl:Class>
-    
-
-
-    <!-- http://www.kaspervandenberg.net/2010/ontologies/Ontology1292940005995.owl#Synapse -->
-
-    <owl:Class rdf:about="http://www.kaspervandenberg.net/2010/ontologies/Ontology1292940005995.owl#Synapse">
-        <dc:description rdf:datatype="&xsd;string">Space between axon and dendrite.</dc:description>
-    </owl:Class>
-    
-
-
-    <!-- http://www.kaspervandenberg.net/2010/ontologies/Ontology1292940005995.owl#Temporal_cortex -->
-
-    <owl:Class rdf:about="http://www.kaspervandenberg.net/2010/ontologies/Ontology1292940005995.owl#Temporal_cortex">
-        <rdfs:subClassOf rdf:resource="http://www.kaspervandenberg.net/2010/ontologies/Ontology1292940005995.owl#BrainArea"/>
-    </owl:Class>
-    
-
-
-    <!-- http://www.kaspervandenberg.net/2010/ontologies/Ontology1292940005995.owl#Thalamus -->
-
-    <owl:Class rdf:about="http://www.kaspervandenberg.net/2010/ontologies/Ontology1292940005995.owl#Thalamus">
-        <rdfs:subClassOf rdf:resource="http://www.kaspervandenberg.net/2010/ontologies/Ontology1292940005995.owl#BrainArea"/>
-    </owl:Class>
-    
-
-
-    <!-- http://www.kaspervandenberg.net/2010/ontologies/Ontology1292940005995.owl#Thought -->
-
-    <owl:Class rdf:about="http://www.kaspervandenberg.net/2010/ontologies/Ontology1292940005995.owl#Thought">
-        <rdfs:subClassOf rdf:resource="http://www.kaspervandenberg.net/2010/ontologies/Ontology1292940005995.owl#Meme"/>
-    </owl:Class>
-    
-
-
-    <!-- http://www.kaspervandenberg.net/2010/ontologies/Ontology1292940005995.owl#Vision -->
-
-    <owl:Class rdf:about="http://www.kaspervandenberg.net/2010/ontologies/Ontology1292940005995.owl#Vision">
-        <rdfs:subClassOf rdf:resource="http://www.kaspervandenberg.net/2010/ontologies/Ontology1292940005995.owl#Function"/>
-    </owl:Class>
-    
-
-
-    <!-- http://www.kaspervandenberg.net/2010/ontologies/Ontology1292940005995.owl#VisualIntegration -->
-
-    <owl:Class rdf:about="http://www.kaspervandenberg.net/2010/ontologies/Ontology1292940005995.owl#VisualIntegration">
-        <rdfs:subClassOf rdf:resource="http://www.kaspervandenberg.net/2010/ontologies/Ontology1292940005995.owl#Function"/>
-    </owl:Class>
-    
-
-
-    <!-- http://www.w3.org/2002/07/owl#Thing -->
-
-    <owl:Class rdf:about="&owl;Thing"/>
-</rdf:RDF>
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     ontologyIRI="http://www.kaspervandenberg.net/2010/ontologies/neurology.owl"
+     versionIRI="http://www.kaspervandenberg.net/2010/ontologies/neurology-20101221.owl">
+    <Prefix name="xsd" IRI="http://www.w3.org/2001/XMLSchema#"/>
+    <Prefix name="owl" IRI="http://www.w3.org/2002/07/owl#"/>
+    <Prefix name="rdf" IRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#"/>
+    <Prefix name="neurology" IRI="http://www.kaspervandenberg.net/2010/ontologies/neurology.owl#"/>
+    <Prefix name="rdfs" IRI="http://www.w3.org/2000/01/rdf-schema#"/>
+    <Prefix name="dc" IRI="http://purl.org/dc/elements/1.1/"/>
+    <Annotation>
+        <AnnotationProperty abbreviatedIRI="dc:subject"/>
+        <Literal datatypeIRI="&xsd;string">Neurology</Literal>
+    </Annotation>
+    <Annotation>
+        <AnnotationProperty abbreviatedIRI="dc:creator"/>
+        <Literal datatypeIRI="&xsd;string">Kasper van den Berg</Literal>
+    </Annotation>
+    <Annotation>
+        <AnnotationProperty abbreviatedIRI="dc:title"/>
+        <Literal datatypeIRI="&xsd;string">Neurological concepts</Literal>
+    </Annotation>
+    <Annotation>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <Literal datatypeIRI="&xsd;string">This ontology models my understanding of neurological concepts.</Literal>
+    </Annotation>
+    <Annotation>
+        <AnnotationProperty abbreviatedIRI="dc:date"/>
+        <Literal datatypeIRI="&xsd;date">2010-12-21</Literal>
+    </Annotation>
+    <Declaration>
+        <Class IRI="#Amygdala"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Astrocyte"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Axon"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Belief"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#BrainArea"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Cel"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Cerebral_cortex"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Connectome"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Consiousness"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Dendrite"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Frontal_lobe"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Function"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#GlialCel"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Hippocampus"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Learning"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Meme"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Memory"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Neo_cortex"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Neuron"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Neurotransmitter"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Olfactory_cortex"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Soma"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Synapse"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Temporal_cortex"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Thalamus"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Thought"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Vision"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#VisualIntegration"/>
+    </Declaration>
+    <Declaration>
+        <Class abbreviatedIRI="owl:Thing"/>
+    </Declaration>
+    <Declaration>
+        <AnnotationProperty abbreviatedIRI="dc:creator"/>
+    </Declaration>
+    <Declaration>
+        <AnnotationProperty abbreviatedIRI="dc:date"/>
+    </Declaration>
+    <Declaration>
+        <AnnotationProperty abbreviatedIRI="dc:description"/>
+    </Declaration>
+    <Declaration>
+        <AnnotationProperty abbreviatedIRI="dc:subject"/>
+    </Declaration>
+    <Declaration>
+        <AnnotationProperty abbreviatedIRI="dc:title"/>
+    </Declaration>
+    <Declaration>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+    </Declaration>
+    <Declaration>
+        <AnnotationProperty abbreviatedIRI="rdfs:seeAlso"/>
+    </Declaration>
+    <Declaration>
+        <Datatype abbreviatedIRI="xsd:ENTITY"/>
+    </Declaration>
+    <SubClassOf>
+        <Class IRI="#Amygdala"/>
+        <Class IRI="#BrainArea"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Astrocyte"/>
+        <Class IRI="#GlialCel"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Belief"/>
+        <Class IRI="#Meme"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#BrainArea"/>
+        <Class abbreviatedIRI="owl:Thing"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Cerebral_cortex"/>
+        <Class IRI="#BrainArea"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Frontal_lobe"/>
+        <Class IRI="#BrainArea"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#GlialCel"/>
+        <Class IRI="#Cel"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Hippocampus"/>
+        <Class IRI="#BrainArea"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Learning"/>
+        <Class IRI="#Memory"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Memory"/>
+        <Class IRI="#Function"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Neo_cortex"/>
+        <Class IRI="#BrainArea"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Neuron"/>
+        <Class IRI="#Cel"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Olfactory_cortex"/>
+        <Class IRI="#BrainArea"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Temporal_cortex"/>
+        <Class IRI="#BrainArea"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Thalamus"/>
+        <Class IRI="#BrainArea"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Thought"/>
+        <Class IRI="#Meme"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Vision"/>
+        <Class IRI="#Function"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#VisualIntegration"/>
+        <Class IRI="#Function"/>
+    </SubClassOf>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#Amygdala</IRI>
+        <Literal datatypeIRI="&xsd;string">Involved in emotions</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="dc:description"/>
+        <IRI>#Axon</IRI>
+        <Literal datatypeIRI="&xsd;string">Emits signals</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="dc:description"/>
+        <IRI>#Dendrite</IRI>
+        <Literal datatypeIRI="&xsd;string">Receives signals</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:seeAlso"/>
+        <IRI>#Dendrite</IRI>
+        <Literal datatypeIRI="&xsd;ENTITY">http://blogs.discovermagazine.com/gallery/albums/brain-portraits/p-124.jpg</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="dc:description"/>
+        <IRI>#GlialCel</IRI>
+        <Literal datatypeIRI="&xsd;string">Long tought as only support tissue, but they do more.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:seeAlso"/>
+        <IRI>#Soma</IRI>
+        <Literal datatypeIRI="&xsd;ENTITY">http://blogs.discovermagazine.com/gallery/albums/betterbrain/cover-illustration-stern-et.jpg</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:seeAlso"/>
+        <IRI>#Soma</IRI>
+        <Literal datatypeIRI="&xsd;ENTITY">http://blogs.discovermagazine.com/gallery/albums/brain-portraits/p-124.jpg</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="dc:description"/>
+        <IRI>#Synapse</IRI>
+        <Literal datatypeIRI="&xsd;string">Space between axon and dendrite.</Literal>
+    </AnnotationAssertion>
+</Ontology>
 
 
 
