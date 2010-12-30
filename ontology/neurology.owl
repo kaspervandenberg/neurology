@@ -25,7 +25,7 @@
     <Prefix name="dc" IRI="http://purl.org/dc/elements/1.1/"/>
     <Prefix name="rdfs" IRI="http://www.w3.org/2000/01/rdf-schema#"/>
     <Prefix name="mereology" IRI="http://www.kaspervandenberg.net/2010/ontologies/mereology.owl#"/>
-    <Import>http://www.kaspervandenberg.net/2010/ontologies/mereology.owl</Import>
+    <Import>http://www.kaspervandenberg.net/2010/ontologies/mereology-20101229.owl</Import>
     <Annotation>
         <AnnotationProperty abbreviatedIRI="dc:subject"/>
         <Literal datatypeIRI="&xsd;string">Neurology</Literal>
