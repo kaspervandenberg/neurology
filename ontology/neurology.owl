@@ -22,8 +22,8 @@
     <Prefix name="" IRI="http://www.w3.org/2002/07/owl#"/>
     <Prefix name="rdf" IRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#"/>
     <Prefix name="neurology" IRI="http://www.kaspervandenberg.net/2010/ontologies/neurology.owl#"/>
-    <Prefix name="rdfs" IRI="http://www.w3.org/2000/01/rdf-schema#"/>
     <Prefix name="dc" IRI="http://purl.org/dc/elements/1.1/"/>
+    <Prefix name="rdfs" IRI="http://www.w3.org/2000/01/rdf-schema#"/>
     <Prefix name="mereology" IRI="http://www.kaspervandenberg.net/2010/ontologies/mereology.owl#"/>
     <Import>http://www.kaspervandenberg.net/2010/ontologies/mereology.owl</Import>
     <Annotation>
@@ -166,6 +166,20 @@
         <Class IRI="#GlialCel"/>
     </SubClassOf>
     <SubClassOf>
+        <Class IRI="#Axon"/>
+        <ObjectAllValuesFrom>
+            <ObjectProperty abbreviatedIRI="mereology:proper_part_of"/>
+            <Class IRI="#Neuron"/>
+        </ObjectAllValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Axon"/>
+        <ObjectExactCardinality cardinality="1">
+            <ObjectProperty abbreviatedIRI="mereology:proper_part_of"/>
+            <Class IRI="#Neuron"/>
+        </ObjectExactCardinality>
+    </SubClassOf>
+    <SubClassOf>
         <Class IRI="#Belief"/>
         <Class IRI="#Meme"/>
     </SubClassOf>
@@ -176,6 +190,20 @@
     <SubClassOf>
         <Class IRI="#Cerebral_cortex"/>
         <Class IRI="#BrainArea"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Dendrite"/>
+        <ObjectAllValuesFrom>
+            <ObjectProperty abbreviatedIRI="mereology:proper_part_of"/>
+            <Class IRI="#Neuron"/>
+        </ObjectAllValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Dendrite"/>
+        <ObjectExactCardinality cardinality="1">
+            <ObjectProperty abbreviatedIRI="mereology:proper_part_of"/>
+            <Class IRI="#Neuron"/>
+        </ObjectExactCardinality>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="#Frontal_lobe"/>
@@ -208,6 +236,20 @@
     <SubClassOf>
         <Class IRI="#Olfactory_cortex"/>
         <Class IRI="#BrainArea"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Soma"/>
+        <ObjectAllValuesFrom>
+            <ObjectProperty abbreviatedIRI="mereology:proper_part_of"/>
+            <Class IRI="#Neuron"/>
+        </ObjectAllValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Soma"/>
+        <ObjectExactCardinality cardinality="1">
+            <ObjectProperty abbreviatedIRI="mereology:proper_part_of"/>
+            <Class IRI="#Neuron"/>
+        </ObjectExactCardinality>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="#Temporal_cortex"/>
