@@ -65,6 +65,9 @@
         <Class IRI="#Cerebral_cortex"/>
     </Declaration>
     <Declaration>
+        <Class IRI="#Cerebrum"/>
+    </Declaration>
+    <Declaration>
         <Class IRI="#Connectome"/>
     </Declaration>
     <Declaration>
@@ -86,7 +89,13 @@
         <Class IRI="#Hippocampus"/>
     </Declaration>
     <Declaration>
+        <Class IRI="#Hypothalamus"/>
+    </Declaration>
+    <Declaration>
         <Class IRI="#Learning"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Left_hemispere"/>
     </Declaration>
     <Declaration>
         <Class IRI="#Meme"/>
@@ -104,10 +113,19 @@
         <Class IRI="#Neurotransmitter"/>
     </Declaration>
     <Declaration>
+        <Class IRI="#Occipital_lobe"/>
+    </Declaration>
+    <Declaration>
         <Class IRI="#Olfactory_cortex"/>
     </Declaration>
     <Declaration>
+        <Class IRI="#Parietal_lobe"/>
+    </Declaration>
+    <Declaration>
         <Class IRI="#Region"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Right_hemispere"/>
     </Declaration>
     <Declaration>
         <Class IRI="#Soma"/>
@@ -117,6 +135,9 @@
     </Declaration>
     <Declaration>
         <Class IRI="#Temporal_cortex"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Temporal_lobe"/>
     </Declaration>
     <Declaration>
         <Class IRI="#Thalamus"/>
@@ -188,6 +209,10 @@
         <Class IRI="#Region"/>
     </SubClassOf>
     <SubClassOf>
+        <Class IRI="#Cerebrum"/>
+        <Class IRI="#Region"/>
+    </SubClassOf>
+    <SubClassOf>
         <Class IRI="#Dendrite"/>
         <ObjectAllValuesFrom>
             <ObjectProperty abbreviatedIRI="mereology:proper_part_of"/>
@@ -214,8 +239,51 @@
         <Class IRI="#Region"/>
     </SubClassOf>
     <SubClassOf>
+        <Class IRI="#Hypothalamus"/>
+        <Class IRI="#Region"/>
+    </SubClassOf>
+    <SubClassOf>
         <Class IRI="#Learning"/>
         <Class IRI="#Memory"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Left_hemispere"/>
+        <Class IRI="#Region"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Left_hemispere"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty abbreviatedIRI="mereology:contains"/>
+            <Class IRI="#Frontal_lobe"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Left_hemispere"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty abbreviatedIRI="mereology:contains"/>
+            <Class IRI="#Occipital_lobe"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Left_hemispere"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty abbreviatedIRI="mereology:contains"/>
+            <Class IRI="#Parietal_lobe"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Left_hemispere"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty abbreviatedIRI="mereology:contains"/>
+            <Class IRI="#Temporal_lobe"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Left_hemispere"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty abbreviatedIRI="mereology:part_of"/>
+            <Class IRI="#Cerebrum"/>
+        </ObjectSomeValuesFrom>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="#Memory"/>
@@ -230,12 +298,59 @@
         <Class IRI="#Cel"/>
     </SubClassOf>
     <SubClassOf>
+        <Class IRI="#Occipital_lobe"/>
+        <Class IRI="#Region"/>
+    </SubClassOf>
+    <SubClassOf>
         <Class IRI="#Olfactory_cortex"/>
+        <Class IRI="#Region"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Parietal_lobe"/>
         <Class IRI="#Region"/>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="#Region"/>
         <Class abbreviatedIRI=":Thing"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Right_hemispere"/>
+        <Class IRI="#Region"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Right_hemispere"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty abbreviatedIRI="mereology:contains"/>
+            <Class IRI="#Frontal_lobe"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Right_hemispere"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty abbreviatedIRI="mereology:contains"/>
+            <Class IRI="#Occipital_lobe"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Right_hemispere"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty abbreviatedIRI="mereology:contains"/>
+            <Class IRI="#Parietal_lobe"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Right_hemispere"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty abbreviatedIRI="mereology:contains"/>
+            <Class IRI="#Temporal_lobe"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Right_hemispere"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty abbreviatedIRI="mereology:part_of"/>
+            <Class IRI="#Cerebrum"/>
+        </ObjectSomeValuesFrom>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="#Soma"/>
@@ -267,6 +382,10 @@
     </SubClassOf>
     <SubClassOf>
         <Class IRI="#Temporal_cortex"/>
+        <Class IRI="#Region"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Temporal_lobe"/>
         <Class IRI="#Region"/>
     </SubClassOf>
     <SubClassOf>
