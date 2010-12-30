@@ -22,7 +22,7 @@
     <Prefix name="" IRI="http://www.w3.org/2002/07/owl#"/>
     <Prefix name="rdf" IRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#"/>
     <Prefix name="rdfs" IRI="http://www.w3.org/2000/01/rdf-schema#"/>
-    <Prefix name="mereo" IRI="http://www.kaspervandenberg.net/2010/ontologies/mereology.owl#"
+    <Prefix name="mereo" IRI="http://www.kaspervandenberg.net/2010/ontologies/mereology.owl#"/>
     <Annotation>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
         <Literal datatypeIRI="&xsd;string">Part-whole relation based on the Mereology axioms in wikipedia.</Literal>
