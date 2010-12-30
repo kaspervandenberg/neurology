@@ -19,10 +19,13 @@
      versionIRI="http://www.kaspervandenberg.net/2010/ontologies/neurology-20101221.owl">
     <Prefix name="xsd" IRI="http://www.w3.org/2001/XMLSchema#"/>
     <Prefix name="owl" IRI="http://www.w3.org/2002/07/owl#"/>
+    <Prefix name="" IRI="http://www.w3.org/2002/07/owl#"/>
     <Prefix name="rdf" IRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#"/>
     <Prefix name="neurology" IRI="http://www.kaspervandenberg.net/2010/ontologies/neurology.owl#"/>
     <Prefix name="rdfs" IRI="http://www.w3.org/2000/01/rdf-schema#"/>
     <Prefix name="dc" IRI="http://purl.org/dc/elements/1.1/"/>
+    <Prefix name="mereology" IRI="http://www.kaspervandenberg.net/2010/ontologies/mereology.owl#"/>
+    <Import>http://www.kaspervandenberg.net/2010/ontologies/mereology.owl</Import>
     <Annotation>
         <AnnotationProperty abbreviatedIRI="dc:subject"/>
         <Literal datatypeIRI="&xsd;string">Neurology</Literal>
@@ -128,7 +131,7 @@
         <Class IRI="#VisualIntegration"/>
     </Declaration>
     <Declaration>
-        <Class abbreviatedIRI="owl:Thing"/>
+        <Class abbreviatedIRI=":Thing"/>
     </Declaration>
     <Declaration>
         <AnnotationProperty abbreviatedIRI="dc:creator"/>
@@ -168,7 +171,7 @@
     </SubClassOf>
     <SubClassOf>
         <Class IRI="#BrainArea"/>
-        <Class abbreviatedIRI="owl:Thing"/>
+        <Class abbreviatedIRI=":Thing"/>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="#Cerebral_cortex"/>
