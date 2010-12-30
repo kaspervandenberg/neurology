@@ -79,24 +79,6 @@
     <SymmetricObjectProperty>
         <ObjectProperty IRI="#underlap"/>
     </SymmetricObjectProperty>
-    <AsymmetricObjectProperty>
-        <ObjectProperty IRI="#proper_part_of"/>
-    </AsymmetricObjectProperty>
-    <AsymmetricObjectProperty>
-        <ObjectProperty IRI="#strictly_contains"/>
-    </AsymmetricObjectProperty>
-    <TransitiveObjectProperty>
-        <ObjectProperty IRI="#contains"/>
-    </TransitiveObjectProperty>
-    <TransitiveObjectProperty>
-        <ObjectProperty IRI="#part_of"/>
-    </TransitiveObjectProperty>
-    <TransitiveObjectProperty>
-        <ObjectProperty IRI="#proper_part_of"/>
-    </TransitiveObjectProperty>
-    <TransitiveObjectProperty>
-        <ObjectProperty IRI="#strictly_contains"/>
-    </TransitiveObjectProperty>
     <ReflexiveObjectProperty>
         <ObjectProperty IRI="#contains"/>
     </ReflexiveObjectProperty>
