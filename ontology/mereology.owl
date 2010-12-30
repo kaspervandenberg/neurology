@@ -70,8 +70,8 @@
         <ObjectProperty IRI="#contains"/>
     </InverseObjectProperties>
     <InverseObjectProperties>
-        <ObjectProperty IRI="#strictly_contains"/>
         <ObjectProperty IRI="#proper_part_of"/>
+        <ObjectProperty IRI="#strictly_contains"/>
     </InverseObjectProperties>
     <SymmetricObjectProperty>
         <ObjectProperty IRI="#overlap"/>
@@ -86,8 +86,20 @@
         <ObjectProperty IRI="#strictly_contains"/>
     </AsymmetricObjectProperty>
     <TransitiveObjectProperty>
+        <ObjectProperty IRI="#contains"/>
+    </TransitiveObjectProperty>
+    <TransitiveObjectProperty>
         <ObjectProperty IRI="#part_of"/>
     </TransitiveObjectProperty>
+    <TransitiveObjectProperty>
+        <ObjectProperty IRI="#proper_part_of"/>
+    </TransitiveObjectProperty>
+    <TransitiveObjectProperty>
+        <ObjectProperty IRI="#strictly_contains"/>
+    </TransitiveObjectProperty>
+    <ReflexiveObjectProperty>
+        <ObjectProperty IRI="#contains"/>
+    </ReflexiveObjectProperty>
     <ReflexiveObjectProperty>
         <ObjectProperty IRI="#overlap"/>
     </ReflexiveObjectProperty>
