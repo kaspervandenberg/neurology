@@ -253,35 +253,35 @@
     <SubClassOf>
         <Class IRI="#Left_hemispere"/>
         <ObjectSomeValuesFrom>
-            <ObjectProperty abbreviatedIRI="mereology:contains"/>
+            <ObjectProperty abbreviatedIRI="mereology:contains_one"/>
             <Class IRI="#Frontal_lobe"/>
         </ObjectSomeValuesFrom>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="#Left_hemispere"/>
         <ObjectSomeValuesFrom>
-            <ObjectProperty abbreviatedIRI="mereology:contains"/>
+            <ObjectProperty abbreviatedIRI="mereology:contains_one"/>
             <Class IRI="#Occipital_lobe"/>
         </ObjectSomeValuesFrom>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="#Left_hemispere"/>
         <ObjectSomeValuesFrom>
-            <ObjectProperty abbreviatedIRI="mereology:contains"/>
+            <ObjectProperty abbreviatedIRI="mereology:contains_one"/>
             <Class IRI="#Parietal_lobe"/>
         </ObjectSomeValuesFrom>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="#Left_hemispere"/>
         <ObjectSomeValuesFrom>
-            <ObjectProperty abbreviatedIRI="mereology:contains"/>
+            <ObjectProperty abbreviatedIRI="mereology:contains_one"/>
             <Class IRI="#Temporal_lobe"/>
         </ObjectSomeValuesFrom>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="#Left_hemispere"/>
         <ObjectSomeValuesFrom>
-            <ObjectProperty abbreviatedIRI="mereology:part_of"/>
+            <ObjectProperty abbreviatedIRI="mereology:part_of_one"/>
             <Class IRI="#Cerebrum"/>
         </ObjectSomeValuesFrom>
     </SubClassOf>
@@ -320,35 +320,35 @@
     <SubClassOf>
         <Class IRI="#Right_hemispere"/>
         <ObjectSomeValuesFrom>
-            <ObjectProperty abbreviatedIRI="mereology:contains"/>
+            <ObjectProperty abbreviatedIRI="mereology:contains_one"/>
             <Class IRI="#Frontal_lobe"/>
         </ObjectSomeValuesFrom>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="#Right_hemispere"/>
         <ObjectSomeValuesFrom>
-            <ObjectProperty abbreviatedIRI="mereology:contains"/>
+            <ObjectProperty abbreviatedIRI="mereology:contains_one"/>
             <Class IRI="#Occipital_lobe"/>
         </ObjectSomeValuesFrom>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="#Right_hemispere"/>
         <ObjectSomeValuesFrom>
-            <ObjectProperty abbreviatedIRI="mereology:contains"/>
+            <ObjectProperty abbreviatedIRI="mereology:contains_one"/>
             <Class IRI="#Parietal_lobe"/>
         </ObjectSomeValuesFrom>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="#Right_hemispere"/>
         <ObjectSomeValuesFrom>
-            <ObjectProperty abbreviatedIRI="mereology:contains"/>
+            <ObjectProperty abbreviatedIRI="mereology:contains_one"/>
             <Class IRI="#Temporal_lobe"/>
         </ObjectSomeValuesFrom>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="#Right_hemispere"/>
         <ObjectSomeValuesFrom>
-            <ObjectProperty abbreviatedIRI="mereology:part_of"/>
+            <ObjectProperty abbreviatedIRI="mereology:part_of_one"/>
             <Class IRI="#Cerebrum"/>
         </ObjectSomeValuesFrom>
     </SubClassOf>
