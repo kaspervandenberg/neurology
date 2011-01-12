@@ -1,0 +1,540 @@
+<?xml version="1.0"?>
+
+
+<!DOCTYPE Ontology [
+    <!ENTITY xsd "http://www.w3.org/2001/XMLSchema#" >
+    <!ENTITY xml "http://www.w3.org/XML/1998/namespace" >
+    <!ENTITY rdfs "http://www.w3.org/2000/01/rdf-schema#" >
+    <!ENTITY rdf "http://www.w3.org/1999/02/22-rdf-syntax-ns#" >
+]>
+
+
+<Ontology xmlns="http://www.w3.org/2002/07/owl#"
+     xml:base="http://www.kaspervandenberg.net/2010/ontologies/anatomicalLocation.owl"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     ontologyIRI="http://www.kaspervandenberg.net/2010/ontologies/anatomicalLocation.owl"
+     versionIRI="http://www.kaspervandenberg.net/2010/ontologies/anatomicalLocation-20101231.owl">
+    <Prefix name="xsd" IRI="http://www.w3.org/2001/XMLSchema#"/>
+    <Prefix name="owl" IRI="http://www.w3.org/2002/07/owl#"/>
+    <Prefix name="" IRI="http://www.w3.org/2002/07/owl#"/>
+    <Prefix name="rdf" IRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#"/>
+    <Prefix name="rdfs" IRI="http://www.w3.org/2000/01/rdf-schema#"/>
+    <Declaration>
+        <Class IRI="#Anterior_end"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Anteroposterior"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Axis"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Dorsal_end"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Dorsoventral"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Lateral_end"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Left_end"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Leftright"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Location"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Medial_end"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Mediolateral"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Posterior_end"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Right_end"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Ventral_end"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#abaxial"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#anterior"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#axial"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#back"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#caudal"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#contralateral"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#deep"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#distal"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#dorsal"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#down"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#front"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#inferior"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#ipsilateral"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#lateral"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#left"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#median"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#parietal"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#posterior"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#proximal"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#right"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#rostral"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#superficial"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#superior"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#up"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#ventral"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#visceral"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#anterior_end"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#caudal_end"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#cranial_end"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#dorsal_end"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#lateral_end"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#left_end"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#medial_end"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#posterior_end"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#right_end"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#ventral_end"/>
+    </Declaration>
+    <SubClassOf>
+        <Class IRI="#Anterior_end"/>
+        <Class IRI="#Location"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Anteroposterior"/>
+        <Class IRI="#Axis"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Dorsal_end"/>
+        <Class IRI="#Location"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Dorsoventral"/>
+        <Class IRI="#Axis"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Lateral_end"/>
+        <Class IRI="#Location"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Left_end"/>
+        <Class IRI="#Location"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Leftright"/>
+        <Class IRI="#Axis"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Medial_end"/>
+        <Class IRI="#Location"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Mediolateral"/>
+        <Class IRI="#Axis"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Posterior_end"/>
+        <Class IRI="#Location"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Right_end"/>
+        <Class IRI="#Location"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Ventral_end"/>
+        <Class IRI="#Location"/>
+    </SubClassOf>
+    <DisjointClasses>
+        <Class IRI="#Anterior_end"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#anterior"/>
+            <Class abbreviatedIRI=":Thing"/>
+        </ObjectSomeValuesFrom>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="#Dorsal_end"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#dorsal"/>
+            <Class abbreviatedIRI=":Thing"/>
+        </ObjectSomeValuesFrom>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="#Lateral_end"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#lateral"/>
+            <Class abbreviatedIRI=":Thing"/>
+        </ObjectSomeValuesFrom>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="#Left_end"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#left"/>
+            <Class abbreviatedIRI=":Thing"/>
+        </ObjectSomeValuesFrom>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="#Medial_end"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#median"/>
+            <Class abbreviatedIRI=":Thing"/>
+        </ObjectSomeValuesFrom>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="#Posterior_end"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#posterior"/>
+            <Class abbreviatedIRI=":Thing"/>
+        </ObjectSomeValuesFrom>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="#Right_end"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#right"/>
+            <Class abbreviatedIRI=":Thing"/>
+        </ObjectSomeValuesFrom>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="#Ventral_end"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#ventral"/>
+            <Class abbreviatedIRI=":Thing"/>
+        </ObjectSomeValuesFrom>
+    </DisjointClasses>
+    <ClassAssertion>
+        <Class IRI="#Anterior_end"/>
+        <NamedIndividual IRI="#anterior_end"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Posterior_end"/>
+        <NamedIndividual IRI="#caudal_end"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Anterior_end"/>
+        <NamedIndividual IRI="#cranial_end"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Dorsal_end"/>
+        <NamedIndividual IRI="#dorsal_end"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Lateral_end"/>
+        <NamedIndividual IRI="#lateral_end"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Lateral_end"/>
+        <NamedIndividual IRI="#left_end"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Left_end"/>
+        <NamedIndividual IRI="#left_end"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Medial_end"/>
+        <NamedIndividual IRI="#medial_end"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Posterior_end"/>
+        <NamedIndividual IRI="#posterior_end"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Lateral_end"/>
+        <NamedIndividual IRI="#right_end"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Right_end"/>
+        <NamedIndividual IRI="#right_end"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Ventral_end"/>
+        <NamedIndividual IRI="#ventral_end"/>
+    </ClassAssertion>
+    <SameIndividual>
+        <NamedIndividual IRI="#anterior_end"/>
+        <NamedIndividual IRI="#cranial_end"/>
+    </SameIndividual>
+    <SameIndividual>
+        <NamedIndividual IRI="#caudal_end"/>
+        <NamedIndividual IRI="#posterior_end"/>
+    </SameIndividual>
+    <DifferentIndividuals>
+        <NamedIndividual IRI="#anterior_end"/>
+        <NamedIndividual IRI="#posterior_end"/>
+    </DifferentIndividuals>
+    <DifferentIndividuals>
+        <NamedIndividual IRI="#cranial_end"/>
+        <NamedIndividual IRI="#posterior_end"/>
+    </DifferentIndividuals>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#posterior"/>
+        <NamedIndividual IRI="#anterior_end"/>
+        <NamedIndividual IRI="#posterior_end"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#anterior"/>
+        <NamedIndividual IRI="#posterior_end"/>
+        <NamedIndividual IRI="#anterior_end"/>
+    </ObjectPropertyAssertion>
+    <InverseObjectProperties>
+        <ObjectProperty IRI="#axial"/>
+        <ObjectProperty IRI="#abaxial"/>
+    </InverseObjectProperties>
+    <InverseObjectProperties>
+        <ObjectProperty IRI="#posterior"/>
+        <ObjectProperty IRI="#anterior"/>
+    </InverseObjectProperties>
+    <InverseObjectProperties>
+        <ObjectProperty IRI="#caudal"/>
+        <ObjectProperty IRI="#rostral"/>
+    </InverseObjectProperties>
+    <InverseObjectProperties>
+        <ObjectProperty IRI="#superficial"/>
+        <ObjectProperty IRI="#deep"/>
+    </InverseObjectProperties>
+    <InverseObjectProperties>
+        <ObjectProperty IRI="#distal"/>
+        <ObjectProperty IRI="#proximal"/>
+    </InverseObjectProperties>
+    <InverseObjectProperties>
+        <ObjectProperty IRI="#dorsal"/>
+        <ObjectProperty IRI="#ventral"/>
+    </InverseObjectProperties>
+    <InverseObjectProperties>
+        <ObjectProperty IRI="#median"/>
+        <ObjectProperty IRI="#lateral"/>
+    </InverseObjectProperties>
+    <InverseObjectProperties>
+        <ObjectProperty IRI="#left"/>
+        <ObjectProperty IRI="#right"/>
+    </InverseObjectProperties>
+    <SymmetricObjectProperty>
+        <ObjectProperty IRI="#contralateral"/>
+    </SymmetricObjectProperty>
+    <SymmetricObjectProperty>
+        <ObjectProperty IRI="#ipsilateral"/>
+    </SymmetricObjectProperty>
+    <TransitiveObjectProperty>
+        <ObjectProperty IRI="#abaxial"/>
+    </TransitiveObjectProperty>
+    <TransitiveObjectProperty>
+        <ObjectProperty IRI="#anterior"/>
+    </TransitiveObjectProperty>
+    <TransitiveObjectProperty>
+        <ObjectProperty IRI="#axial"/>
+    </TransitiveObjectProperty>
+    <TransitiveObjectProperty>
+        <ObjectProperty IRI="#back"/>
+    </TransitiveObjectProperty>
+    <TransitiveObjectProperty>
+        <ObjectProperty IRI="#caudal"/>
+    </TransitiveObjectProperty>
+    <TransitiveObjectProperty>
+        <ObjectProperty IRI="#deep"/>
+    </TransitiveObjectProperty>
+    <TransitiveObjectProperty>
+        <ObjectProperty IRI="#distal"/>
+    </TransitiveObjectProperty>
+    <TransitiveObjectProperty>
+        <ObjectProperty IRI="#dorsal"/>
+    </TransitiveObjectProperty>
+    <TransitiveObjectProperty>
+        <ObjectProperty IRI="#down"/>
+    </TransitiveObjectProperty>
+    <TransitiveObjectProperty>
+        <ObjectProperty IRI="#front"/>
+    </TransitiveObjectProperty>
+    <TransitiveObjectProperty>
+        <ObjectProperty IRI="#inferior"/>
+    </TransitiveObjectProperty>
+    <TransitiveObjectProperty>
+        <ObjectProperty IRI="#lateral"/>
+    </TransitiveObjectProperty>
+    <TransitiveObjectProperty>
+        <ObjectProperty IRI="#left"/>
+    </TransitiveObjectProperty>
+    <TransitiveObjectProperty>
+        <ObjectProperty IRI="#median"/>
+    </TransitiveObjectProperty>
+    <TransitiveObjectProperty>
+        <ObjectProperty IRI="#posterior"/>
+    </TransitiveObjectProperty>
+    <TransitiveObjectProperty>
+        <ObjectProperty IRI="#proximal"/>
+    </TransitiveObjectProperty>
+    <TransitiveObjectProperty>
+        <ObjectProperty IRI="#right"/>
+    </TransitiveObjectProperty>
+    <TransitiveObjectProperty>
+        <ObjectProperty IRI="#rostral"/>
+    </TransitiveObjectProperty>
+    <TransitiveObjectProperty>
+        <ObjectProperty IRI="#superficial"/>
+    </TransitiveObjectProperty>
+    <TransitiveObjectProperty>
+        <ObjectProperty IRI="#superior"/>
+    </TransitiveObjectProperty>
+    <TransitiveObjectProperty>
+        <ObjectProperty IRI="#up"/>
+    </TransitiveObjectProperty>
+    <TransitiveObjectProperty>
+        <ObjectProperty IRI="#ventral"/>
+    </TransitiveObjectProperty>
+    <ReflexiveObjectProperty>
+        <ObjectProperty IRI="#ipsilateral"/>
+    </ReflexiveObjectProperty>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#anterior</IRI>
+        <Literal datatypeIRI="&xsd;string">The front-end: x.anterior y means that y is more towards the nose than x</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#axial</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Towards the central axis of the organism. x.axial y means that y is more towards the central axis than x: lung.axial spinalcord</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#caudal</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Towards the feet</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#contralateral</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">On the opposite side</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#distal</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Towards the end of an appendage; x.distal y means that y is more towards the end of the appendage than x e.g. elbow.distal hand</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#dorsal</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">x.dorsal y means y is more towards the back than x at least when x and y are part of the torso, when x and y are part of the head then x.dorsal y means y is more towards the top of the head</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#ipsilateral</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">On the same side of the body</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#lateral</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Towards the side. x.lateral y means y is more towards the side than x.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#left</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">x.left y means y is more towards the left-side than x</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#median</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Towards the center; x.medial y; means y is more towards the center of the body than x.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#parietal</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">A &#39;wall&#39; of a body cavity.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#posterior</IRI>
+        <Literal datatypeIRI="&xsd;string">Opposite of the back</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#proximal</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Towards where the appendage is attached</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#rostral</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Towards the nose</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#superficial</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Towards the outer surface; x.superfical y mean y is closer to the body&#39;s surface than x</Literal>
+    </AnnotationAssertion>
+</Ontology>
+
+
+
+<!-- Generated by the OWL API (version 3.1.0.20069) http://owlapi.sourceforge.net -->
+
