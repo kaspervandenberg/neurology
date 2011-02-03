@@ -363,16 +363,16 @@
         <NamedIndividual IRI="#anterior_end"/>
     </ObjectPropertyAssertion>
     <InverseObjectProperties>
-        <ObjectProperty IRI="#axial"/>
         <ObjectProperty IRI="#abaxial"/>
+        <ObjectProperty IRI="#axial"/>
     </InverseObjectProperties>
     <InverseObjectProperties>
-        <ObjectProperty IRI="#posterior"/>
         <ObjectProperty IRI="#anterior"/>
+        <ObjectProperty IRI="#posterior"/>
     </InverseObjectProperties>
     <InverseObjectProperties>
-        <ObjectProperty IRI="#caudal"/>
         <ObjectProperty IRI="#rostral"/>
+        <ObjectProperty IRI="#caudal"/>
     </InverseObjectProperties>
     <InverseObjectProperties>
         <ObjectProperty IRI="#superficial"/>
@@ -383,16 +383,16 @@
         <ObjectProperty IRI="#proximal"/>
     </InverseObjectProperties>
     <InverseObjectProperties>
-        <ObjectProperty IRI="#dorsal"/>
         <ObjectProperty IRI="#ventral"/>
+        <ObjectProperty IRI="#dorsal"/>
     </InverseObjectProperties>
     <InverseObjectProperties>
-        <ObjectProperty IRI="#median"/>
         <ObjectProperty IRI="#lateral"/>
+        <ObjectProperty IRI="#median"/>
     </InverseObjectProperties>
     <InverseObjectProperties>
-        <ObjectProperty IRI="#left"/>
         <ObjectProperty IRI="#right"/>
+        <ObjectProperty IRI="#left"/>
     </InverseObjectProperties>
     <SymmetricObjectProperty>
         <ObjectProperty IRI="#contralateral"/>
@@ -471,6 +471,16 @@
     </ReflexiveObjectProperty>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#abaxial</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Awy from the organisms central axis: x.abaxial y means y is more towards the outside of the body, for example spine.abaxial lungs.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:seeAlso"/>
+        <IRI>#abaxial</IRI>
+        <Literal datatypeIRI="&xsd;anyURI">img/axial-skull_interior_anatomy.svg</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
         <IRI>#anterior</IRI>
         <Literal datatypeIRI="&xsd;string">The front-end: x.anterior y means that y is more towards the nose than x</Literal>
     </AnnotationAssertion>
@@ -478,6 +488,11 @@
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
         <IRI>#axial</IRI>
         <Literal datatypeIRI="&rdf;PlainLiteral">Towards the central axis of the organism. x.axial y means that y is more towards the central axis than x: lung.axial spinalcord</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:seeAlso"/>
+        <IRI>#axial</IRI>
+        <Literal datatypeIRI="&xsd;anyURI">img/axial-skull_interior_anatomy.svg</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
