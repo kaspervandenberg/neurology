@@ -485,6 +485,11 @@
         <Literal datatypeIRI="&xsd;string">The front-end: x.anterior y means that y is more towards the nose than x</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:seeAlso"/>
+        <IRI>#anterior</IRI>
+        <Literal datatypeIRI="&xsd;anyURI">img/anteroposterior-head_anatomy_lateral_view.svg</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
         <IRI>#axial</IRI>
         <Literal datatypeIRI="&rdf;PlainLiteral">Towards the central axis of the organism. x.axial y means that y is more towards the central axis than x: lung.axial spinalcord</Literal>
@@ -542,7 +547,12 @@
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
         <IRI>#posterior</IRI>
-        <Literal datatypeIRI="&xsd;string">Opposite of the back</Literal>
+        <Literal datatypeIRI="&xsd;string">To the back: eyes.posterior hypophysis means the hypophysis is more towards the back of the head than the eyes.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:seeAlso"/>
+        <IRI>#posterior</IRI>
+        <Literal datatypeIRI="&xsd;anyURI">img/anteroposterior-head_anatomy_lateral_view.svg</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
