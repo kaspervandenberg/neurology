@@ -62,6 +62,9 @@
         <Class IRI="#Cel"/>
     </Declaration>
     <Declaration>
+        <Class IRI="#CerebralLobe"/>
+    </Declaration>
+    <Declaration>
         <Class IRI="#Cerebral_cortex"/>
     </Declaration>
     <Declaration>
@@ -205,6 +208,10 @@
         <Class IRI="#Meme"/>
     </SubClassOf>
     <SubClassOf>
+        <Class IRI="#CerebralLobe"/>
+        <Class IRI="#Region"/>
+    </SubClassOf>
+    <SubClassOf>
         <Class IRI="#Cerebral_cortex"/>
         <Class IRI="#Region"/>
     </SubClassOf>
@@ -228,7 +235,7 @@
     </SubClassOf>
     <SubClassOf>
         <Class IRI="#Frontal_lobe"/>
-        <Class IRI="#Region"/>
+        <Class IRI="#CerebralLobe"/>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="#GlialCel"/>
@@ -299,7 +306,7 @@
     </SubClassOf>
     <SubClassOf>
         <Class IRI="#Occipital_lobe"/>
-        <Class IRI="#Region"/>
+        <Class IRI="#CerebralLobe"/>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="#Olfactory_cortex"/>
@@ -307,7 +314,7 @@
     </SubClassOf>
     <SubClassOf>
         <Class IRI="#Parietal_lobe"/>
-        <Class IRI="#Region"/>
+        <Class IRI="#CerebralLobe"/>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="#Region"/>
