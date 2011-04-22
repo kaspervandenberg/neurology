@@ -29,6 +29,41 @@
     <Import>http://www.kaspervandenberg.net/2010/ontologies/neurology-20101221.owl</Import>
     <Import>http://www.kaspervandenberg.net/2010/ontologies/mereotopology-20101230.owl</Import>
     <SubClassOf>
+        <Class IRI="http://www.kaspervandenberg.net/2010/ontologies/neurology.owl#Cerebellum"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="http://www.kaspervandenberg.net/2010/ontologies/anatomicalLocation.owl#anterior"/>
+            <Class IRI="http://www.kaspervandenberg.net/2010/ontologies/neurology.owl#Brainstem"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://www.kaspervandenberg.net/2010/ontologies/neurology.owl#Cerebellum"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="http://www.kaspervandenberg.net/2010/ontologies/anatomicalLocation.owl#superior"/>
+            <Class IRI="http://www.kaspervandenberg.net/2010/ontologies/neurology.owl#Cerebrum"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://www.kaspervandenberg.net/2010/ontologies/neurology.owl#Cerebrum"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="http://www.kaspervandenberg.net/2010/ontologies/anatomicalLocation.owl#inferior"/>
+            <Class IRI="http://www.kaspervandenberg.net/2010/ontologies/neurology.owl#Brainstem"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://www.kaspervandenberg.net/2010/ontologies/neurology.owl#Cerebrum"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="http://www.kaspervandenberg.net/2010/ontologies/anatomicalLocation.owl#inferior"/>
+            <Class IRI="http://www.kaspervandenberg.net/2010/ontologies/neurology.owl#Cerebellum"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://www.kaspervandenberg.net/2010/ontologies/neurology.owl#Cerebrum"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="http://www.kaspervandenberg.net/2010/ontologies/anatomicalLocation.owl#posterior"/>
+            <Class IRI="http://www.kaspervandenberg.net/2010/ontologies/neurology.owl#Cerebellum"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
         <Class IRI="http://www.kaspervandenberg.net/2010/ontologies/neurology.owl#Frontal_lobe"/>
         <ObjectSomeValuesFrom>
             <ObjectProperty IRI="http://www.kaspervandenberg.net/2010/ontologies/anatomicalLocation.owl#posterior"/>
@@ -45,8 +80,67 @@
     <SubClassOf>
         <Class IRI="http://www.kaspervandenberg.net/2010/ontologies/neurology.owl#Frontal_lobe"/>
         <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="http://www.kaspervandenberg.net/2010/ontologies/anatomicalLocation.owl#posterior"/>
+            <Class IRI="http://www.kaspervandenberg.net/2010/ontologies/neurology.owl#Temporal_lobe"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://www.kaspervandenberg.net/2010/ontologies/neurology.owl#Frontal_lobe"/>
+        <ObjectSomeValuesFrom>
             <ObjectProperty IRI="http://www.kaspervandenberg.net/2010/ontologies/mereotopology.owl#connected_to"/>
             <Class IRI="http://www.kaspervandenberg.net/2010/ontologies/neurology.owl#Parietal_lobe"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://www.kaspervandenberg.net/2010/ontologies/neurology.owl#Frontal_lobe"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="http://www.kaspervandenberg.net/2010/ontologies/mereotopology.owl#connected_to"/>
+            <Class IRI="http://www.kaspervandenberg.net/2010/ontologies/neurology.owl#Temporal_lobe"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://www.kaspervandenberg.net/2010/ontologies/neurology.owl#Frontal_lobe"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="http://www.kaspervandenberg.net/2010/ontologies/mereotopology.owlmereology#part_of"/>
+            <ObjectUnionOf>
+                <Class IRI="http://www.kaspervandenberg.net/2010/ontologies/neurology.owl#Left_hemispere"/>
+                <Class IRI="http://www.kaspervandenberg.net/2010/ontologies/neurology.owl#Right_hemispere"/>
+            </ObjectUnionOf>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://www.kaspervandenberg.net/2010/ontologies/neurology.owl#Left_hemispere"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="http://www.kaspervandenberg.net/2010/ontologies/mereology.owl#contains_one"/>
+            <Class IRI="http://www.kaspervandenberg.net/2010/ontologies/neurology.owl#Frontal_lobe"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://www.kaspervandenberg.net/2010/ontologies/neurology.owl#Left_hemispere"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="http://www.kaspervandenberg.net/2010/ontologies/mereology.owl#contains_one"/>
+            <Class IRI="http://www.kaspervandenberg.net/2010/ontologies/neurology.owl#Occipital_lobe"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://www.kaspervandenberg.net/2010/ontologies/neurology.owl#Left_hemispere"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="http://www.kaspervandenberg.net/2010/ontologies/mereology.owl#contains_one"/>
+            <Class IRI="http://www.kaspervandenberg.net/2010/ontologies/neurology.owl#Parietal_lobe"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://www.kaspervandenberg.net/2010/ontologies/neurology.owl#Left_hemispere"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="http://www.kaspervandenberg.net/2010/ontologies/mereology.owl#contains_one"/>
+            <Class IRI="http://www.kaspervandenberg.net/2010/ontologies/neurology.owl#Temporal_lobe"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://www.kaspervandenberg.net/2010/ontologies/neurology.owl#Left_hemispere"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="http://www.kaspervandenberg.net/2010/ontologies/mereology.owl#part_of_one"/>
+            <Class IRI="http://www.kaspervandenberg.net/2010/ontologies/neurology.owl#Cerebrum"/>
         </ObjectSomeValuesFrom>
     </SubClassOf>
     <SubClassOf>
@@ -66,8 +160,32 @@
     <SubClassOf>
         <Class IRI="http://www.kaspervandenberg.net/2010/ontologies/neurology.owl#Occipital_lobe"/>
         <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="http://www.kaspervandenberg.net/2010/ontologies/anatomicalLocation.owl#anterior"/>
+            <Class IRI="http://www.kaspervandenberg.net/2010/ontologies/neurology.owl#Temporal_lobe"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://www.kaspervandenberg.net/2010/ontologies/neurology.owl#Occipital_lobe"/>
+        <ObjectSomeValuesFrom>
             <ObjectProperty IRI="http://www.kaspervandenberg.net/2010/ontologies/mereotopology.owl#connected_to"/>
             <Class IRI="http://www.kaspervandenberg.net/2010/ontologies/neurology.owl#Parietal_lobe"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://www.kaspervandenberg.net/2010/ontologies/neurology.owl#Occipital_lobe"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="http://www.kaspervandenberg.net/2010/ontologies/mereotopology.owl#connected_to"/>
+            <Class IRI="http://www.kaspervandenberg.net/2010/ontologies/neurology.owl#Temporal_lobe"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://www.kaspervandenberg.net/2010/ontologies/neurology.owl#Occipital_lobe"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="http://www.kaspervandenberg.net/2010/ontologies/mereotopology.owlmereology#part_of"/>
+            <ObjectUnionOf>
+                <Class IRI="http://www.kaspervandenberg.net/2010/ontologies/neurology.owl#Left_hemispere"/>
+                <Class IRI="http://www.kaspervandenberg.net/2010/ontologies/neurology.owl#Right_hemispere"/>
+            </ObjectUnionOf>
         </ObjectSomeValuesFrom>
     </SubClassOf>
     <SubClassOf>
@@ -75,6 +193,13 @@
         <ObjectSomeValuesFrom>
             <ObjectProperty IRI="http://www.kaspervandenberg.net/2010/ontologies/anatomicalLocation.owl#anterior"/>
             <Class IRI="http://www.kaspervandenberg.net/2010/ontologies/neurology.owl#Frontal_lobe"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://www.kaspervandenberg.net/2010/ontologies/neurology.owl#Parietal_lobe"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="http://www.kaspervandenberg.net/2010/ontologies/anatomicalLocation.owl#inferior"/>
+            <Class IRI="http://www.kaspervandenberg.net/2010/ontologies/neurology.owl#Temporal_lobe"/>
         </ObjectSomeValuesFrom>
     </SubClassOf>
     <SubClassOf>
@@ -96,6 +221,110 @@
         <ObjectSomeValuesFrom>
             <ObjectProperty IRI="http://www.kaspervandenberg.net/2010/ontologies/mereotopology.owl#connected_to"/>
             <Class IRI="http://www.kaspervandenberg.net/2010/ontologies/neurology.owl#Occipital_lobe"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://www.kaspervandenberg.net/2010/ontologies/neurology.owl#Parietal_lobe"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="http://www.kaspervandenberg.net/2010/ontologies/mereotopology.owl#connected_to"/>
+            <Class IRI="http://www.kaspervandenberg.net/2010/ontologies/neurology.owl#Temporal_lobe"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://www.kaspervandenberg.net/2010/ontologies/neurology.owl#Parietal_lobe"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="http://www.kaspervandenberg.net/2010/ontologies/mereotopology.owlmereology#part_of"/>
+            <ObjectUnionOf>
+                <Class IRI="http://www.kaspervandenberg.net/2010/ontologies/neurology.owl#Left_hemispere"/>
+                <Class IRI="http://www.kaspervandenberg.net/2010/ontologies/neurology.owl#Right_hemispere"/>
+            </ObjectUnionOf>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://www.kaspervandenberg.net/2010/ontologies/neurology.owl#Right_hemispere"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="http://www.kaspervandenberg.net/2010/ontologies/mereology.owl#contains_one"/>
+            <Class IRI="http://www.kaspervandenberg.net/2010/ontologies/neurology.owl#Frontal_lobe"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://www.kaspervandenberg.net/2010/ontologies/neurology.owl#Right_hemispere"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="http://www.kaspervandenberg.net/2010/ontologies/mereology.owl#contains_one"/>
+            <Class IRI="http://www.kaspervandenberg.net/2010/ontologies/neurology.owl#Occipital_lobe"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://www.kaspervandenberg.net/2010/ontologies/neurology.owl#Right_hemispere"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="http://www.kaspervandenberg.net/2010/ontologies/mereology.owl#contains_one"/>
+            <Class IRI="http://www.kaspervandenberg.net/2010/ontologies/neurology.owl#Parietal_lobe"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://www.kaspervandenberg.net/2010/ontologies/neurology.owl#Right_hemispere"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="http://www.kaspervandenberg.net/2010/ontologies/mereology.owl#contains_one"/>
+            <Class IRI="http://www.kaspervandenberg.net/2010/ontologies/neurology.owl#Temporal_lobe"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://www.kaspervandenberg.net/2010/ontologies/neurology.owl#Right_hemispere"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="http://www.kaspervandenberg.net/2010/ontologies/mereology.owl#part_of_one"/>
+            <Class IRI="http://www.kaspervandenberg.net/2010/ontologies/neurology.owl#Cerebrum"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://www.kaspervandenberg.net/2010/ontologies/neurology.owl#Temporal_lobe"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="http://www.kaspervandenberg.net/2010/ontologies/anatomicalLocation.owl#anterior"/>
+            <Class IRI="http://www.kaspervandenberg.net/2010/ontologies/neurology.owl#Frontal_lobe"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://www.kaspervandenberg.net/2010/ontologies/neurology.owl#Temporal_lobe"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="http://www.kaspervandenberg.net/2010/ontologies/anatomicalLocation.owl#posterior"/>
+            <Class IRI="http://www.kaspervandenberg.net/2010/ontologies/neurology.owl#Occipital_lobe"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://www.kaspervandenberg.net/2010/ontologies/neurology.owl#Temporal_lobe"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="http://www.kaspervandenberg.net/2010/ontologies/anatomicalLocation.owl#superior"/>
+            <Class IRI="http://www.kaspervandenberg.net/2010/ontologies/neurology.owl#Parietal_lobe"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://www.kaspervandenberg.net/2010/ontologies/neurology.owl#Temporal_lobe"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="http://www.kaspervandenberg.net/2010/ontologies/mereotopology.owl#connected_to"/>
+            <Class IRI="http://www.kaspervandenberg.net/2010/ontologies/neurology.owl#Frontal_lobe"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://www.kaspervandenberg.net/2010/ontologies/neurology.owl#Temporal_lobe"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="http://www.kaspervandenberg.net/2010/ontologies/mereotopology.owl#connected_to"/>
+            <Class IRI="http://www.kaspervandenberg.net/2010/ontologies/neurology.owl#Occipital_lobe"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://www.kaspervandenberg.net/2010/ontologies/neurology.owl#Temporal_lobe"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="http://www.kaspervandenberg.net/2010/ontologies/mereotopology.owl#connected_to"/>
+            <Class IRI="http://www.kaspervandenberg.net/2010/ontologies/neurology.owl#Parietal_lobe"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://www.kaspervandenberg.net/2010/ontologies/neurology.owl#Temporal_lobe"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="http://www.kaspervandenberg.net/2010/ontologies/mereotopology.owlmereology#part_of"/>
+            <ObjectUnionOf>
+                <Class IRI="http://www.kaspervandenberg.net/2010/ontologies/neurology.owl#Left_hemispere"/>
+                <Class IRI="http://www.kaspervandenberg.net/2010/ontologies/neurology.owl#Right_hemispere"/>
+            </ObjectUnionOf>
         </ObjectSomeValuesFrom>
     </SubClassOf>
 </Ontology>
