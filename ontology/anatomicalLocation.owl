@@ -44,6 +44,9 @@
         <Class IRI="#Axis"/>
     </Declaration>
     <Declaration>
+        <Class IRI="#Coronal"/>
+    </Declaration>
+    <Declaration>
         <Class IRI="#Dorsal_end"/>
     </Declaration>
     <Declaration>
@@ -68,10 +71,19 @@
         <Class IRI="#Mediolateral"/>
     </Declaration>
     <Declaration>
+        <Class IRI="#Plane"/>
+    </Declaration>
+    <Declaration>
         <Class IRI="#Posterior_end"/>
     </Declaration>
     <Declaration>
         <Class IRI="#Right_end"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Sagital"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Transverse"/>
     </Declaration>
     <Declaration>
         <Class IRI="#Ventral_end"/>
@@ -193,6 +205,10 @@
         <Class IRI="#Axis"/>
     </SubClassOf>
     <SubClassOf>
+        <Class IRI="#Coronal"/>
+        <Class IRI="#Plane"/>
+    </SubClassOf>
+    <SubClassOf>
         <Class IRI="#Dorsal_end"/>
         <Class IRI="#Location"/>
     </SubClassOf>
@@ -227,6 +243,14 @@
     <SubClassOf>
         <Class IRI="#Right_end"/>
         <Class IRI="#Location"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Sagital"/>
+        <Class IRI="#Plane"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Transverse"/>
+        <Class IRI="#Plane"/>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="#Ventral_end"/>
@@ -363,12 +387,12 @@
         <NamedIndividual IRI="#anterior_end"/>
     </ObjectPropertyAssertion>
     <InverseObjectProperties>
-        <ObjectProperty IRI="#abaxial"/>
         <ObjectProperty IRI="#axial"/>
+        <ObjectProperty IRI="#abaxial"/>
     </InverseObjectProperties>
     <InverseObjectProperties>
-        <ObjectProperty IRI="#anterior"/>
         <ObjectProperty IRI="#posterior"/>
+        <ObjectProperty IRI="#anterior"/>
     </InverseObjectProperties>
     <InverseObjectProperties>
         <ObjectProperty IRI="#rostral"/>
@@ -469,6 +493,21 @@
     <ReflexiveObjectProperty>
         <ObjectProperty IRI="#ipsilateral"/>
     </ReflexiveObjectProperty>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#Coronal</IRI>
+        <Literal datatypeIRI="&rdfs;Literal">Divides the body in a front and a back part; or posterior and anterior.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#Sagital</IRI>
+        <Literal datatypeIRI="&rdfs;Literal">Divides the body in a left and right part.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#Transverse</IRI>
+        <Literal datatypeIRI="&rdfs;Literal">Divides the body in a cranial and caudal part.</Literal>
+    </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
         <IRI>#abaxial</IRI>
