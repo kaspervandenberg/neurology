@@ -18,11 +18,11 @@
      ontologyIRI="http://www.kaspervandenberg.net/2010/ontologies/mereotopology.owl"
      versionIRI="http://www.kaspervandenberg.net/2010/ontologies/mereotopology-20101230.owl">
     <Prefix name="xsd" IRI="http://www.w3.org/2001/XMLSchema#"/>
+    <Prefix name="mereo" IRI="http://www.kaspervandenberg.net/2010/ontologies/mereology.owl#"/>
     <Prefix name="owl" IRI="http://www.w3.org/2002/07/owl#"/>
     <Prefix name="" IRI="http://www.w3.org/2002/07/owl#"/>
     <Prefix name="rdf" IRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#"/>
     <Prefix name="rdfs" IRI="http://www.w3.org/2000/01/rdf-schema#"/>
-    <Prefix name="mereology" IRI="http//www.kaspervandenberg.net/2010/ontologies/mereology.owl#"/>
     <Import>http://www.kaspervandenberg.net/2010/ontologies/mereology-20101229.owl</Import>
     <Annotation>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
@@ -50,7 +50,7 @@
         <ObjectProperty IRI="#encloses"/>
     </Declaration>
     <SubObjectPropertyOf>
-        <ObjectProperty IRI="mereology#overlap"/>
+        <ObjectProperty abbreviatedIRI="mereo:overlap"/>
         <ObjectProperty IRI="#connected_to"/>
     </SubObjectPropertyOf>
     <SubObjectPropertyOf>
@@ -58,8 +58,8 @@
         <ObjectProperty IRI="#enclosed_by"/>
     </SubObjectPropertyOf>
     <InverseObjectProperties>
-        <ObjectProperty IRI="#enclosed_by"/>
         <ObjectProperty IRI="#encloses"/>
+        <ObjectProperty IRI="#enclosed_by"/>
     </InverseObjectProperties>
     <SymmetricObjectProperty>
         <ObjectProperty IRI="#connected_to"/>
