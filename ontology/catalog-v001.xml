@@ -1,14 +1,15 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <catalog id="XML Catalog File (see http://www.oasis-open.org/committees/entity/spec-2001-08-06.html) - Created By Protege 4" prefer="public" xmlns="urn:oasis:names:tc:entity:xmlns:xml:catalog">
+    <uri id="User Edited Redirect" name="brainanatomy-20110422" uri="brainanatomy.owl"/>
     <uri id="User Entered Import Resolution" name="http://www.kaspervandenberg.net/2010/ontologies/mereotopology-20101230.owl" uri="mereotopology.owl"/>
     <uri id="User Entered Import Resolution" name="http://www.kaspervandenberg.net/2010/ontologies/anatomicalLocation-20101231.owl" uri="anatomicalLocation.owl"/>
     <uri id="User Entered Import Resolution" name="http://www.kaspervandenberg.net/2010/ontologies/neurology-20101221.owl" uri="neurology.owl"/>
     <uri id="User Entered Import Resolution" name="http://www.kaspervandenberg.net/2010/ontologies/mereology-20101229.owl" uri="mereology.owl"/>
     <group id="Folder Repository, directory=, recursive=true, Auto-Update=true, version=1" prefer="public" xml:base="">
-        <uri id="Automatically generated entry, Timestamp=1293729852051" name="http://www.kaspervandenberg.net/2010/ontologies/neurology.owl" uri="neurology.owl"/>
-        <uri id="Automatically generated entry, Timestamp=1293803662280" name="http://www.kaspervandenberg.net/2010/ontologies/mereology.owl" uri="mereology.owl"/>
-        <uri id="Automatically generated entry, Timestamp=1293803662280" name="http://www.kaspervandenberg.net/2010/ontologies/mereotopology.owl" uri="mereotopology.owl"/>
         <uri id="Automatically generated entry, Timestamp=1303487980839" name="http://www.kaspervandenberg.net/2010/ontologies/anatomicalLocation.owl" uri="anatomicalLocation.owl"/>
-        <uri id="Automatically generated entry, Timestamp=1303487980839" name="http://www.kaspervandenberg.net/2011/ontologies/brainanatomy.owl" uri="brainanatomy.owl"/>
+        <uri id="Automatically generated entry, Timestamp=1303556136290" name="http://www.kaspervandenberg.net/2010/ontologies/neurology.owl" uri="neurology.owl"/>
+        <uri id="Automatically generated entry, Timestamp=1303556136290" name="http://www.kaspervandenberg.net/2010/ontologies/mereology.owl" uri="mereology.owl"/>
+        <uri id="Automatically generated entry, Timestamp=1303556136290" name="http://www.kaspervandenberg.net/2010/ontologies/mereotopology.owl" uri="mereotopology.owl"/>
+        <uri id="Automatically generated entry, Timestamp=1303557010019" name="http://www.kaspervandenberg.net/2011/ontologies/brainanatomy.owl" uri="brainanatomy.owl"/>
     </group>
 </catalog>
