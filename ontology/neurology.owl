@@ -471,6 +471,11 @@
         <Literal datatypeIRI="&xsd;string">Emits signals</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:seeAlso"/>
+        <IRI>#Central_sulcus</IRI>
+        <Literal datatypeIRI="&xsd;anyURI">img/gyriAndSulci.png</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
         <IRI>#CerebralLobe</IRI>
         <Literal datatypeIRI="&rdfs;Literal">The cerebral lobes are defined by the respective parts in the skull&#39;s bone structure.</Literal>
@@ -492,6 +497,41 @@
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:seeAlso"/>
+        <IRI>#Inferior_frontal_gyrus</IRI>
+        <Literal datatypeIRI="&xsd;anyURI">img/gyriAndSulci.png</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:seeAlso"/>
+        <IRI>#Inferior_frontal_sulcus</IRI>
+        <Literal datatypeIRI="&xsd;anyURI">img/gyriAndSulci.png</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:seeAlso"/>
+        <IRI>#Inter-hemisperic_fissure</IRI>
+        <Literal datatypeIRI="&xsd;anyURI">img/gyriAndSulci.png</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:seeAlso"/>
+        <IRI>#Lateral_fissure</IRI>
+        <Literal datatypeIRI="&xsd;anyURI">img/gyriAndSulci.png</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:seeAlso"/>
+        <IRI>#Middle_frontal_gyrus</IRI>
+        <Literal datatypeIRI="&xsd;anyURI">img/gyriAndSulci.png</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:seeAlso"/>
+        <IRI>#Postcentral_sulcus</IRI>
+        <Literal datatypeIRI="&xsd;anyURI">img/gyriAndSulci.png</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:seeAlso"/>
+        <IRI>#Precentral_sulcus</IRI>
+        <Literal datatypeIRI="&xsd;anyURI">img/gyriAndSulci.png</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:seeAlso"/>
         <IRI>#Soma</IRI>
         <Literal datatypeIRI="&xsd;ENTITY">http://blogs.discovermagazine.com/gallery/albums/betterbrain/cover-illustration-stern-et.jpg</Literal>
     </AnnotationAssertion>
@@ -501,9 +541,24 @@
         <Literal datatypeIRI="&xsd;ENTITY">http://blogs.discovermagazine.com/gallery/albums/brain-portraits/p-124.jpg</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:seeAlso"/>
+        <IRI>#Superior_frontal_gyrus</IRI>
+        <Literal datatypeIRI="&xsd;anyURI">img/gyriAndSulci.png</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:seeAlso"/>
+        <IRI>#Superior_frontal_sulcus</IRI>
+        <Literal datatypeIRI="&xsd;anyURI">img/gyriAndSulci.png</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="dc:description"/>
         <IRI>#Synapse</IRI>
         <Literal datatypeIRI="&xsd;string">Space between axon and dendrite.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:seeAlso"/>
+        <IRI>#Trans-occipital_sulcus</IRI>
+        <Literal datatypeIRI="&xsd;anyURI">img/gyriAndSulci.png</Literal>
     </AnnotationAssertion>
 </Ontology>
 
