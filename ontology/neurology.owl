@@ -65,6 +65,9 @@
         <Class IRI="#Cel"/>
     </Declaration>
     <Declaration>
+        <Class IRI="#Central_sulcus"/>
+    </Declaration>
+    <Declaration>
         <Class IRI="#Cerebellum"/>
     </Declaration>
     <Declaration>
@@ -86,6 +89,9 @@
         <Class IRI="#Dendrite"/>
     </Declaration>
     <Declaration>
+        <Class IRI="#Fold"/>
+    </Declaration>
+    <Declaration>
         <Class IRI="#Frontal_lobe"/>
     </Declaration>
     <Declaration>
@@ -95,10 +101,28 @@
         <Class IRI="#GlialCel"/>
     </Declaration>
     <Declaration>
+        <Class IRI="#Gyrus"/>
+    </Declaration>
+    <Declaration>
         <Class IRI="#Hippocampus"/>
     </Declaration>
     <Declaration>
         <Class IRI="#Hypothalamus"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Inferior_frontal_gyrus"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Inferior_frontal_sulcus"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Insular_cortex"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Inter-hemisperic_fissure"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Lateral_fissure"/>
     </Declaration>
     <Declaration>
         <Class IRI="#Learning"/>
@@ -111,6 +135,9 @@
     </Declaration>
     <Declaration>
         <Class IRI="#Memory"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Middle_frontal_gyrus"/>
     </Declaration>
     <Declaration>
         <Class IRI="#Neo_cortex"/>
@@ -131,6 +158,12 @@
         <Class IRI="#Parietal_lobe"/>
     </Declaration>
     <Declaration>
+        <Class IRI="#Postcentral_sulcus"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Precentral_sulcus"/>
+    </Declaration>
+    <Declaration>
         <Class IRI="#Region"/>
     </Declaration>
     <Declaration>
@@ -138,6 +171,15 @@
     </Declaration>
     <Declaration>
         <Class IRI="#Soma"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Sulcus"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Superior_frontal_gyrus"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Superior_frontal_sulcus"/>
     </Declaration>
     <Declaration>
         <Class IRI="#Synapse"/>
@@ -153,6 +195,9 @@
     </Declaration>
     <Declaration>
         <Class IRI="#Thought"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Trans-occipital_sulcus"/>
     </Declaration>
     <Declaration>
         <Class IRI="#Vision"/>
@@ -218,6 +263,10 @@
         <Class IRI="#Region"/>
     </SubClassOf>
     <SubClassOf>
+        <Class IRI="#Central_sulcus"/>
+        <Class IRI="#Sulcus"/>
+    </SubClassOf>
+    <SubClassOf>
         <Class IRI="#Cerebellum"/>
         <Class IRI="#Region"/>
     </SubClassOf>
@@ -248,6 +297,10 @@
         </ObjectExactCardinality>
     </SubClassOf>
     <SubClassOf>
+        <Class IRI="#Fold"/>
+        <Class IRI="#Region"/>
+    </SubClassOf>
+    <SubClassOf>
         <Class IRI="#Frontal_lobe"/>
         <Class IRI="#CerebralLobe"/>
     </SubClassOf>
@@ -256,12 +309,36 @@
         <Class IRI="#Cel"/>
     </SubClassOf>
     <SubClassOf>
+        <Class IRI="#Gyrus"/>
+        <Class IRI="#Fold"/>
+    </SubClassOf>
+    <SubClassOf>
         <Class IRI="#Hippocampus"/>
         <Class IRI="#Region"/>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="#Hypothalamus"/>
         <Class IRI="#Region"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Inferior_frontal_gyrus"/>
+        <Class IRI="#Gyrus"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Inferior_frontal_sulcus"/>
+        <Class IRI="#Sulcus"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Insular_cortex"/>
+        <Class IRI="#CerebralLobe"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Inter-hemisperic_fissure"/>
+        <Class IRI="#Sulcus"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Lateral_fissure"/>
+        <Class IRI="#Sulcus"/>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="#Learning"/>
@@ -274,6 +351,10 @@
     <SubClassOf>
         <Class IRI="#Memory"/>
         <Class IRI="#Function"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Middle_frontal_gyrus"/>
+        <Class IRI="#Gyrus"/>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="#Neo_cortex"/>
@@ -296,6 +377,14 @@
         <Class IRI="#CerebralLobe"/>
     </SubClassOf>
     <SubClassOf>
+        <Class IRI="#Postcentral_sulcus"/>
+        <Class IRI="#Sulcus"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Precentral_sulcus"/>
+        <Class IRI="#Sulcus"/>
+    </SubClassOf>
+    <SubClassOf>
         <Class IRI="#Region"/>
         <Class abbreviatedIRI=":Thing"/>
     </SubClassOf>
@@ -316,6 +405,18 @@
             <ObjectProperty abbreviatedIRI="mereology:proper_part_of"/>
             <Class IRI="#Neuron"/>
         </ObjectExactCardinality>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Sulcus"/>
+        <Class IRI="#Fold"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Superior_frontal_gyrus"/>
+        <Class IRI="#Gyrus"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Superior_frontal_sulcus"/>
+        <Class IRI="#Sulcus"/>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="#Synapse"/>
@@ -348,6 +449,10 @@
         <Class IRI="#Meme"/>
     </SubClassOf>
     <SubClassOf>
+        <Class IRI="#Trans-occipital_sulcus"/>
+        <Class IRI="#Sulcus"/>
+    </SubClassOf>
+    <SubClassOf>
         <Class IRI="#Vision"/>
         <Class IRI="#Function"/>
     </SubClassOf>
@@ -364,6 +469,11 @@
         <AnnotationProperty abbreviatedIRI="dc:description"/>
         <IRI>#Axon</IRI>
         <Literal datatypeIRI="&xsd;string">Emits signals</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#CerebralLobe</IRI>
+        <Literal datatypeIRI="&rdfs;Literal">The cerebral lobes are defined by the respective parts in the skull&#39;s bone structure.</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="dc:description"/>
