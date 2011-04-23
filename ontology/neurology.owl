@@ -22,8 +22,10 @@
     <Prefix name="" IRI="http://www.w3.org/2002/07/owl#"/>
     <Prefix name="rdf" IRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#"/>
     <Prefix name="neurology" IRI="http://www.kaspervandenberg.net/2010/ontologies/neurology.owl#"/>
-    <Prefix name="rdfs" IRI="http://www.w3.org/2000/01/rdf-schema#"/>
     <Prefix name="dc" IRI="http://purl.org/dc/elements/1.1/"/>
+    <Prefix name="rdfs" IRI="http://www.w3.org/2000/01/rdf-schema#"/>
+    <Prefix name="mereology" IRI="http://www.kaspervandenberg.net/2010/ontologies/mereology.owl#"/>
+    <Import>http://www.kaspervandenberg.net/2010/ontologies/mereology-20101229.owl</Import>
     <Annotation>
         <AnnotationProperty abbreviatedIRI="dc:subject"/>
         <Literal datatypeIRI="&xsd;string">Neurology</Literal>
@@ -196,14 +198,14 @@
     <SubClassOf>
         <Class IRI="#Axon"/>
         <ObjectAllValuesFrom>
-            <ObjectProperty IRI="http://www.kaspervandenberg.net/2010/ontologies/mereology.owl#proper_part_of"/>
+            <ObjectProperty abbreviatedIRI="mereology:proper_part_of"/>
             <Class IRI="#Neuron"/>
         </ObjectAllValuesFrom>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="#Axon"/>
         <ObjectExactCardinality cardinality="1">
-            <ObjectProperty IRI="http://www.kaspervandenberg.net/2010/ontologies/mereology.owl#proper_part_of"/>
+            <ObjectProperty abbreviatedIRI="mereology:proper_part_of"/>
             <Class IRI="#Neuron"/>
         </ObjectExactCardinality>
     </SubClassOf>
@@ -234,14 +236,14 @@
     <SubClassOf>
         <Class IRI="#Dendrite"/>
         <ObjectAllValuesFrom>
-            <ObjectProperty IRI="http://www.kaspervandenberg.net/2010/ontologies/mereology.owl#proper_part_of"/>
+            <ObjectProperty abbreviatedIRI="mereology:proper_part_of"/>
             <Class IRI="#Neuron"/>
         </ObjectAllValuesFrom>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="#Dendrite"/>
         <ObjectExactCardinality cardinality="1">
-            <ObjectProperty IRI="http://www.kaspervandenberg.net/2010/ontologies/mereology.owl#proper_part_of"/>
+            <ObjectProperty abbreviatedIRI="mereology:proper_part_of"/>
             <Class IRI="#Neuron"/>
         </ObjectExactCardinality>
     </SubClassOf>
@@ -304,28 +306,28 @@
     <SubClassOf>
         <Class IRI="#Soma"/>
         <ObjectAllValuesFrom>
-            <ObjectProperty IRI="http://www.kaspervandenberg.net/2010/ontologies/mereology.owl#proper_part_of"/>
+            <ObjectProperty abbreviatedIRI="mereology:proper_part_of"/>
             <Class IRI="#Neuron"/>
         </ObjectAllValuesFrom>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="#Soma"/>
         <ObjectExactCardinality cardinality="1">
-            <ObjectProperty IRI="http://www.kaspervandenberg.net/2010/ontologies/mereology.owl#proper_part_of"/>
+            <ObjectProperty abbreviatedIRI="mereology:proper_part_of"/>
             <Class IRI="#Neuron"/>
         </ObjectExactCardinality>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="#Synapse"/>
         <ObjectSomeValuesFrom>
-            <ObjectProperty IRI="http://www.kaspervandenberg.net/2010/ontologies/mereology.owl#overlap"/>
+            <ObjectProperty abbreviatedIRI="mereology:overlap"/>
             <Class IRI="#Axon"/>
         </ObjectSomeValuesFrom>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="#Synapse"/>
         <ObjectSomeValuesFrom>
-            <ObjectProperty IRI="http://www.kaspervandenberg.net/2010/ontologies/mereology.owl#overlap"/>
+            <ObjectProperty abbreviatedIRI="mereology:overlap"/>
             <Class IRI="#Dendrite"/>
         </ObjectSomeValuesFrom>
     </SubClassOf>
