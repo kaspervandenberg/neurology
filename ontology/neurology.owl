@@ -567,6 +567,11 @@
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:seeAlso"/>
+        <IRI>#Inferior_parietal_lobule</IRI>
+        <Literal datatypeIRI="&xsd;anyURI">http://en.wikipedia.org/wiki/Inferior_parietal_lobule</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:seeAlso"/>
         <IRI>#Inter-hemisperic_fissure</IRI>
         <Literal datatypeIRI="&xsd;anyURI">http://en.wikipedia.org/w/index.php?oldid=424311960</Literal>
     </AnnotationAssertion>
@@ -574,6 +579,11 @@
         <AnnotationProperty abbreviatedIRI="rdfs:seeAlso"/>
         <IRI>#Inter-hemisperic_fissure</IRI>
         <Literal datatypeIRI="&xsd;anyURI">img/gyriAndSulci.png</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:seeAlso"/>
+        <IRI>#Intraparietal_sulcus</IRI>
+        <Literal datatypeIRI="&xsd;anyURI">http://en.wikipedia.org/wiki/Intraparietal_sulcus</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:seeAlso"/>
@@ -654,6 +664,11 @@
         <AnnotationProperty abbreviatedIRI="rdfs:seeAlso"/>
         <IRI>#Superior_frontal_sulcus</IRI>
         <Literal datatypeIRI="&xsd;anyURI">img/gyriAndSulci.png</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:seeAlso"/>
+        <IRI>#Superior_parietal_lobule</IRI>
+        <Literal datatypeIRI="&xsd;anyURI">http://en.wikipedia.org/wiki/Superior_parietal_lobule</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="dc:description"/>
