@@ -20,8 +20,8 @@
     <Prefix name="xsd" IRI="http://www.w3.org/2001/XMLSchema#"/>
     <Prefix name="owl" IRI="http://www.w3.org/2002/07/owl#"/>
     <Prefix name="neuro" IRI="http://www.kaspervandenberg.net/2010/ontologies/neurology.owl#"/>
-    <Prefix name="topology" IRI="http://www.kaspervandenberg.net/2010/ontologies/mereotopology.owl#"/>
     <Prefix name="anatomic" IRI="http://www.kaspervandenberg.net/2010/ontologies/anatomicalLocation.owl#"/>
+    <Prefix name="topology" IRI="http://www.kaspervandenberg.net/2010/ontologies/mereotopology.owl#"/>
     <Prefix name="" IRI="http://www.w3.org/2002/07/owl#"/>
     <Prefix name="rdf" IRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#"/>
     <Prefix name="rdfs" IRI="http://www.w3.org/2000/01/rdf-schema#"/>
@@ -260,6 +260,13 @@
     <SubClassOf>
         <Class abbreviatedIRI="neuro:Inferior_frontal_gyrus"/>
         <ObjectSomeValuesFrom>
+            <ObjectProperty abbreviatedIRI="anatomic:posterior"/>
+            <Class abbreviatedIRI="neuro:Precentral_sulcus"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class abbreviatedIRI="neuro:Inferior_frontal_gyrus"/>
+        <ObjectSomeValuesFrom>
             <ObjectProperty abbreviatedIRI="anatomic:superior"/>
             <Class abbreviatedIRI="neuro:Inferior_frontal_sulcus"/>
         </ObjectSomeValuesFrom>
@@ -304,6 +311,13 @@
         <ObjectSomeValuesFrom>
             <ObjectProperty abbreviatedIRI="topology:connected_to"/>
             <Class abbreviatedIRI="neuro:Middle_frontal_gyrus"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class abbreviatedIRI="neuro:Inferior_frontal_gyrus"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty abbreviatedIRI="topology:connected_to"/>
+            <Class abbreviatedIRI="neuro:Precentral_sulcus"/>
         </ObjectSomeValuesFrom>
     </SubClassOf>
     <SubClassOf>
@@ -316,6 +330,13 @@
     <SubClassOf>
         <Class abbreviatedIRI="neuro:Inferior_frontal_sulcus"/>
         <ObjectSomeValuesFrom>
+            <ObjectProperty abbreviatedIRI="anatomic:posterior"/>
+            <Class abbreviatedIRI="neuro:Precentral_sulcus"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class abbreviatedIRI="neuro:Inferior_frontal_sulcus"/>
+        <ObjectSomeValuesFrom>
             <ObjectProperty abbreviatedIRI="anatomic:superior"/>
             <Class abbreviatedIRI="neuro:Middle_frontal_gyrus"/>
         </ObjectSomeValuesFrom>
@@ -353,6 +374,13 @@
         <ObjectSomeValuesFrom>
             <ObjectProperty abbreviatedIRI="topology:connected_to"/>
             <Class abbreviatedIRI="neuro:Middle_frontal_gyrus"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class abbreviatedIRI="neuro:Inferior_frontal_sulcus"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty abbreviatedIRI="topology:connected_to"/>
+            <Class abbreviatedIRI="neuro:Precentral_sulcus"/>
         </ObjectSomeValuesFrom>
     </SubClassOf>
     <SubClassOf>
@@ -421,6 +449,13 @@
     <SubClassOf>
         <Class abbreviatedIRI="neuro:Middle_frontal_gyrus"/>
         <ObjectSomeValuesFrom>
+            <ObjectProperty abbreviatedIRI="anatomic:posterior"/>
+            <Class abbreviatedIRI="neuro:Precentral_sulcus"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class abbreviatedIRI="neuro:Middle_frontal_gyrus"/>
+        <ObjectSomeValuesFrom>
             <ObjectProperty abbreviatedIRI="anatomic:superior"/>
             <Class abbreviatedIRI="neuro:Superior_frontal_gyrus"/>
         </ObjectSomeValuesFrom>
@@ -451,6 +486,13 @@
         <ObjectSomeValuesFrom>
             <ObjectProperty abbreviatedIRI="topology:connected_to"/>
             <Class abbreviatedIRI="neuro:Inferior_frontal_sulcus"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class abbreviatedIRI="neuro:Middle_frontal_gyrus"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty abbreviatedIRI="topology:connected_to"/>
+            <Class abbreviatedIRI="neuro:Precentral_sulcus"/>
         </ObjectSomeValuesFrom>
     </SubClassOf>
     <SubClassOf>
@@ -574,6 +616,34 @@
     <SubClassOf>
         <Class abbreviatedIRI="neuro:Postcentral_sulcus"/>
         <ObjectSomeValuesFrom>
+            <ObjectProperty abbreviatedIRI="anatomic:anterior"/>
+            <Class abbreviatedIRI="neuro:Anterior_central_gyrus"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class abbreviatedIRI="neuro:Postcentral_sulcus"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty abbreviatedIRI="anatomic:anterior"/>
+            <Class abbreviatedIRI="neuro:Central_sulcus"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class abbreviatedIRI="neuro:Postcentral_sulcus"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty abbreviatedIRI="anatomic:anterior"/>
+            <Class abbreviatedIRI="neuro:Posterior_central_gyrus"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class abbreviatedIRI="neuro:Postcentral_sulcus"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty abbreviatedIRI="anatomic:anterior"/>
+            <Class abbreviatedIRI="neuro:Precentral_sulcus"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class abbreviatedIRI="neuro:Postcentral_sulcus"/>
+        <ObjectSomeValuesFrom>
             <ObjectProperty abbreviatedIRI="mereology:part_of"/>
             <Class abbreviatedIRI="neuro:Occipital_lobe"/>
         </ObjectSomeValuesFrom>
@@ -639,6 +709,118 @@
         <ObjectSomeValuesFrom>
             <ObjectProperty abbreviatedIRI="topology:connected_to"/>
             <Class abbreviatedIRI="neuro:Postcentral_sulcus"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class abbreviatedIRI="neuro:Precentral_sulcus"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty abbreviatedIRI="anatomic:anterior"/>
+            <Class abbreviatedIRI="neuro:Inferior_frontal_gyrus"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class abbreviatedIRI="neuro:Precentral_sulcus"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty abbreviatedIRI="anatomic:anterior"/>
+            <Class abbreviatedIRI="neuro:Inferior_frontal_sulcus"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class abbreviatedIRI="neuro:Precentral_sulcus"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty abbreviatedIRI="anatomic:anterior"/>
+            <Class abbreviatedIRI="neuro:Middle_frontal_gyrus"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class abbreviatedIRI="neuro:Precentral_sulcus"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty abbreviatedIRI="anatomic:anterior"/>
+            <Class abbreviatedIRI="neuro:Superior_frontal_gyrus"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class abbreviatedIRI="neuro:Precentral_sulcus"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty abbreviatedIRI="anatomic:anterior"/>
+            <Class abbreviatedIRI="neuro:Superior_frontal_sulcus"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class abbreviatedIRI="neuro:Precentral_sulcus"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty abbreviatedIRI="anatomic:posterior"/>
+            <Class abbreviatedIRI="neuro:Anterior_central_gyrus"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class abbreviatedIRI="neuro:Precentral_sulcus"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty abbreviatedIRI="anatomic:posterior"/>
+            <Class abbreviatedIRI="neuro:Central_sulcus"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class abbreviatedIRI="neuro:Precentral_sulcus"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty abbreviatedIRI="anatomic:posterior"/>
+            <Class abbreviatedIRI="neuro:Postcentral_sulcus"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class abbreviatedIRI="neuro:Precentral_sulcus"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty abbreviatedIRI="anatomic:posterior"/>
+            <Class abbreviatedIRI="neuro:Posterior_central_gyrus"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class abbreviatedIRI="neuro:Precentral_sulcus"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty abbreviatedIRI="mereology:part_of"/>
+            <Class abbreviatedIRI="neuro:Occipital_lobe"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class abbreviatedIRI="neuro:Precentral_sulcus"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty abbreviatedIRI="topology:connected_to"/>
+            <Class abbreviatedIRI="neuro:Anterior_central_gyrus"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class abbreviatedIRI="neuro:Precentral_sulcus"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty abbreviatedIRI="topology:connected_to"/>
+            <Class abbreviatedIRI="neuro:Inferior_frontal_gyrus"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class abbreviatedIRI="neuro:Precentral_sulcus"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty abbreviatedIRI="topology:connected_to"/>
+            <Class abbreviatedIRI="neuro:Inferior_frontal_sulcus"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class abbreviatedIRI="neuro:Precentral_sulcus"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty abbreviatedIRI="topology:connected_to"/>
+            <Class abbreviatedIRI="neuro:Middle_frontal_gyrus"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class abbreviatedIRI="neuro:Precentral_sulcus"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty abbreviatedIRI="topology:connected_to"/>
+            <Class abbreviatedIRI="neuro:Superior_frontal_gyrus"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class abbreviatedIRI="neuro:Precentral_sulcus"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty abbreviatedIRI="topology:connected_to"/>
+            <Class abbreviatedIRI="neuro:Superior_frontal_sulcus"/>
         </ObjectSomeValuesFrom>
     </SubClassOf>
     <SubClassOf>
@@ -714,6 +896,13 @@
     <SubClassOf>
         <Class abbreviatedIRI="neuro:Superior_frontal_gyrus"/>
         <ObjectSomeValuesFrom>
+            <ObjectProperty abbreviatedIRI="anatomic:posterior"/>
+            <Class abbreviatedIRI="neuro:Precentral_sulcus"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class abbreviatedIRI="neuro:Superior_frontal_gyrus"/>
+        <ObjectSomeValuesFrom>
             <ObjectProperty abbreviatedIRI="mereology:part_of"/>
             <Class abbreviatedIRI="neuro:Frontal_lobe"/>
         </ObjectSomeValuesFrom>
@@ -723,6 +912,13 @@
         <ObjectSomeValuesFrom>
             <ObjectProperty abbreviatedIRI="topology:connected_to"/>
             <Class abbreviatedIRI="neuro:Middle_frontal_gyrus"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class abbreviatedIRI="neuro:Superior_frontal_gyrus"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty abbreviatedIRI="topology:connected_to"/>
+            <Class abbreviatedIRI="neuro:Precentral_sulcus"/>
         </ObjectSomeValuesFrom>
     </SubClassOf>
     <SubClassOf>
@@ -756,6 +952,13 @@
     <SubClassOf>
         <Class abbreviatedIRI="neuro:Superior_frontal_sulcus"/>
         <ObjectSomeValuesFrom>
+            <ObjectProperty abbreviatedIRI="anatomic:posterior"/>
+            <Class abbreviatedIRI="neuro:Precentral_sulcus"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class abbreviatedIRI="neuro:Superior_frontal_sulcus"/>
+        <ObjectSomeValuesFrom>
             <ObjectProperty abbreviatedIRI="anatomic:superior"/>
             <Class abbreviatedIRI="neuro:Superior_frontal_gyrus"/>
         </ObjectSomeValuesFrom>
@@ -765,6 +968,13 @@
         <ObjectSomeValuesFrom>
             <ObjectProperty abbreviatedIRI="topology:connected_to"/>
             <Class abbreviatedIRI="neuro:Middle_frontal_gyrus"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class abbreviatedIRI="neuro:Superior_frontal_sulcus"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty abbreviatedIRI="topology:connected_to"/>
+            <Class abbreviatedIRI="neuro:Precentral_sulcus"/>
         </ObjectSomeValuesFrom>
     </SubClassOf>
     <SubClassOf>
