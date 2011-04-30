@@ -384,6 +384,55 @@
         </ObjectSomeValuesFrom>
     </SubClassOf>
     <SubClassOf>
+        <Class abbreviatedIRI="neuro:Inferior_parietal_lobule"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty abbreviatedIRI="anatomic:anterior"/>
+            <Class abbreviatedIRI="neuro:Postcentral_sulcus"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class abbreviatedIRI="neuro:Inferior_parietal_lobule"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty abbreviatedIRI="anatomic:superior"/>
+            <Class abbreviatedIRI="neuro:Intraparietal_sulcus"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class abbreviatedIRI="neuro:Inferior_parietal_lobule"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty abbreviatedIRI="anatomic:superior"/>
+            <Class abbreviatedIRI="neuro:Superior_parietal_lobule"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class abbreviatedIRI="neuro:Inferior_parietal_lobule"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty abbreviatedIRI="mereology:part_of"/>
+            <Class abbreviatedIRI="neuro:Parietal_lobe"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class abbreviatedIRI="neuro:Inferior_parietal_lobule"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty abbreviatedIRI="topology:connected_to"/>
+            <Class abbreviatedIRI="neuro:Intraparietal_sulcus"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class abbreviatedIRI="neuro:Inferior_parietal_lobule"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty abbreviatedIRI="topology:connected_to"/>
+            <Class abbreviatedIRI="neuro:Postcentral_sulcus"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class abbreviatedIRI="neuro:Inferior_parietal_lobule"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty abbreviatedIRI="topology:connected_to"/>
+            <Class abbreviatedIRI="neuro:Superior_parietal_lobule"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
         <Class abbreviatedIRI="neuro:Insular_cortex"/>
         <ObjectSomeValuesFrom>
             <ObjectProperty abbreviatedIRI="anatomic:superficial"/>
@@ -395,6 +444,55 @@
         <ObjectSomeValuesFrom>
             <ObjectProperty abbreviatedIRI="anatomic:superficial"/>
             <Class abbreviatedIRI="neuro:Temporal_lobe"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class abbreviatedIRI="neuro:Intraparietal_sulcus"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty abbreviatedIRI="anatomic:anterior"/>
+            <Class abbreviatedIRI="neuro:Posterior_central_gyrus"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class abbreviatedIRI="neuro:Intraparietal_sulcus"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty abbreviatedIRI="anatomic:inferior"/>
+            <Class abbreviatedIRI="neuro:Inferior_parietal_lobule"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class abbreviatedIRI="neuro:Intraparietal_sulcus"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty abbreviatedIRI="anatomic:superior"/>
+            <Class abbreviatedIRI="neuro:Superior_parietal_lobule"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class abbreviatedIRI="neuro:Intraparietal_sulcus"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty abbreviatedIRI="mereology:part_of"/>
+            <Class abbreviatedIRI="neuro:Parietal_lobe"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class abbreviatedIRI="neuro:Intraparietal_sulcus"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty abbreviatedIRI="topology:connected_to"/>
+            <Class abbreviatedIRI="neuro:Inferior_parietal_lobule"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class abbreviatedIRI="neuro:Intraparietal_sulcus"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty abbreviatedIRI="topology:connected_to"/>
+            <Class abbreviatedIRI="neuro:Postcentral_sulcus"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class abbreviatedIRI="neuro:Intraparietal_sulcus"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty abbreviatedIRI="topology:connected_to"/>
+            <Class abbreviatedIRI="neuro:Superior_parietal_lobule"/>
         </ObjectSomeValuesFrom>
     </SubClassOf>
     <SubClassOf>
@@ -680,7 +778,28 @@
         <Class abbreviatedIRI="neuro:Postcentral_sulcus"/>
         <ObjectSomeValuesFrom>
             <ObjectProperty abbreviatedIRI="topology:connected_to"/>
+            <Class abbreviatedIRI="neuro:Inferior_parietal_lobule"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class abbreviatedIRI="neuro:Postcentral_sulcus"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty abbreviatedIRI="topology:connected_to"/>
+            <Class abbreviatedIRI="neuro:Intraparietal_sulcus"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class abbreviatedIRI="neuro:Postcentral_sulcus"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty abbreviatedIRI="topology:connected_to"/>
             <Class abbreviatedIRI="neuro:Posterior_central_gyrus"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class abbreviatedIRI="neuro:Postcentral_sulcus"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty abbreviatedIRI="topology:connected_to"/>
+            <Class abbreviatedIRI="neuro:Superior_parietal_lobule"/>
         </ObjectSomeValuesFrom>
     </SubClassOf>
     <SubClassOf>
@@ -1017,6 +1136,55 @@
         <ObjectSomeValuesFrom>
             <ObjectProperty abbreviatedIRI="topology:connected_to"/>
             <Class abbreviatedIRI="neuro:Superior_frontal_gyrus"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class abbreviatedIRI="neuro:Superior_parietal_lobule"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty abbreviatedIRI="anatomic:anterior"/>
+            <Class abbreviatedIRI="neuro:Postcentral_sulcus"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class abbreviatedIRI="neuro:Superior_parietal_lobule"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty abbreviatedIRI="anatomic:inferior"/>
+            <Class abbreviatedIRI="neuro:Inferior_parietal_lobule"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class abbreviatedIRI="neuro:Superior_parietal_lobule"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty abbreviatedIRI="anatomic:inferior"/>
+            <Class abbreviatedIRI="neuro:Intraparietal_sulcus"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class abbreviatedIRI="neuro:Superior_parietal_lobule"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty abbreviatedIRI="mereology:part_of"/>
+            <Class abbreviatedIRI="neuro:Parietal_lobe"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class abbreviatedIRI="neuro:Superior_parietal_lobule"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty abbreviatedIRI="topology:connected_to"/>
+            <Class abbreviatedIRI="neuro:Inferior_parietal_lobule"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class abbreviatedIRI="neuro:Superior_parietal_lobule"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty abbreviatedIRI="topology:connected_to"/>
+            <Class abbreviatedIRI="neuro:Intraparietal_sulcus"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class abbreviatedIRI="neuro:Superior_parietal_lobule"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty abbreviatedIRI="topology:connected_to"/>
+            <Class abbreviatedIRI="neuro:Postcentral_sulcus"/>
         </ObjectSomeValuesFrom>
     </SubClassOf>
     <SubClassOf>

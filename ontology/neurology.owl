@@ -119,10 +119,16 @@
         <Class IRI="#Inferior_frontal_sulcus"/>
     </Declaration>
     <Declaration>
+        <Class IRI="#Inferior_parietal_lobule"/>
+    </Declaration>
+    <Declaration>
         <Class IRI="#Insular_cortex"/>
     </Declaration>
     <Declaration>
         <Class IRI="#Inter-hemisperic_fissure"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Intraparietal_sulcus"/>
     </Declaration>
     <Declaration>
         <Class IRI="#Lateral_fissure"/>
@@ -186,6 +192,9 @@
     </Declaration>
     <Declaration>
         <Class IRI="#Superior_frontal_sulcus"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Superior_parietal_lobule"/>
     </Declaration>
     <Declaration>
         <Class IRI="#Synapse"/>
@@ -339,11 +348,19 @@
         <Class IRI="#Sulcus"/>
     </SubClassOf>
     <SubClassOf>
+        <Class IRI="#Inferior_parietal_lobule"/>
+        <Class IRI="#Gyrus"/>
+    </SubClassOf>
+    <SubClassOf>
         <Class IRI="#Insular_cortex"/>
         <Class IRI="#CerebralLobe"/>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="#Inter-hemisperic_fissure"/>
+        <Class IRI="#Sulcus"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Intraparietal_sulcus"/>
         <Class IRI="#Sulcus"/>
     </SubClassOf>
     <SubClassOf>
@@ -431,6 +448,10 @@
     <SubClassOf>
         <Class IRI="#Superior_frontal_sulcus"/>
         <Class IRI="#Sulcus"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Superior_parietal_lobule"/>
+        <Class IRI="#Gyrus"/>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="#Synapse"/>
