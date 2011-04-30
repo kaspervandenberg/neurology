@@ -50,6 +50,9 @@
         <Class IRI="#Amygdala"/>
     </Declaration>
     <Declaration>
+        <Class IRI="#Anterior_central_gyrus"/>
+    </Declaration>
+    <Declaration>
         <Class IRI="#Astrocyte"/>
     </Declaration>
     <Declaration>
@@ -161,6 +164,9 @@
         <Class IRI="#Postcentral_sulcus"/>
     </Declaration>
     <Declaration>
+        <Class IRI="#Posterior_central_gyrus"/>
+    </Declaration>
+    <Declaration>
         <Class IRI="#Precentral_sulcus"/>
     </Declaration>
     <Declaration>
@@ -235,6 +241,10 @@
     <SubClassOf>
         <Class IRI="#Amygdala"/>
         <Class IRI="#Region"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Anterior_central_gyrus"/>
+        <Class IRI="#Gyrus"/>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="#Astrocyte"/>
@@ -381,6 +391,10 @@
         <Class IRI="#Sulcus"/>
     </SubClassOf>
     <SubClassOf>
+        <Class IRI="#Posterior_central_gyrus"/>
+        <Class IRI="#Gyrus"/>
+    </SubClassOf>
+    <SubClassOf>
         <Class IRI="#Precentral_sulcus"/>
         <Class IRI="#Sulcus"/>
     </SubClassOf>
@@ -466,9 +480,24 @@
         <Literal datatypeIRI="&xsd;string">Involved in emotions</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:seeAlso"/>
+        <IRI>#Anterior_central_gyrus</IRI>
+        <Literal datatypeIRI="&xsd;anyURI">http://en.wikipedia.org/w/index.php?oldid=424311960</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:seeAlso"/>
+        <IRI>#Anterior_central_gyrus</IRI>
+        <Literal datatypeIRI="&xsd;anyURI">img/gyriAndSulci.png</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="dc:description"/>
         <IRI>#Axon</IRI>
         <Literal datatypeIRI="&xsd;string">Emits signals</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:seeAlso"/>
+        <IRI>#Central_sulcus</IRI>
+        <Literal datatypeIRI="&xsd;anyURI">http://en.wikipedia.org/w/index.php?oldid=424311960</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:seeAlso"/>
@@ -498,7 +527,17 @@
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:seeAlso"/>
         <IRI>#Inferior_frontal_gyrus</IRI>
+        <Literal datatypeIRI="&xsd;anyURI">http://en.wikipedia.org/w/index.php?oldid=424311960</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:seeAlso"/>
+        <IRI>#Inferior_frontal_gyrus</IRI>
         <Literal datatypeIRI="&xsd;anyURI">img/gyriAndSulci.png</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:seeAlso"/>
+        <IRI>#Inferior_frontal_sulcus</IRI>
+        <Literal datatypeIRI="&xsd;anyURI">http://en.wikipedia.org/w/index.php?oldid=424311960</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:seeAlso"/>
@@ -508,7 +547,17 @@
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:seeAlso"/>
         <IRI>#Inter-hemisperic_fissure</IRI>
+        <Literal datatypeIRI="&xsd;anyURI">http://en.wikipedia.org/w/index.php?oldid=424311960</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:seeAlso"/>
+        <IRI>#Inter-hemisperic_fissure</IRI>
         <Literal datatypeIRI="&xsd;anyURI">img/gyriAndSulci.png</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:seeAlso"/>
+        <IRI>#Lateral_fissure</IRI>
+        <Literal datatypeIRI="&xsd;anyURI">http://en.wikipedia.org/w/index.php?oldid=424311960</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:seeAlso"/>
@@ -518,12 +567,37 @@
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:seeAlso"/>
         <IRI>#Middle_frontal_gyrus</IRI>
+        <Literal datatypeIRI="&xsd;anyURI">http://en.wikipedia.org/w/index.php?oldid=424311960</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:seeAlso"/>
+        <IRI>#Middle_frontal_gyrus</IRI>
         <Literal datatypeIRI="&xsd;anyURI">img/gyriAndSulci.png</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:seeAlso"/>
         <IRI>#Postcentral_sulcus</IRI>
+        <Literal datatypeIRI="&xsd;anyURI">http://en.wikipedia.org/w/index.php?oldid=424311960</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:seeAlso"/>
+        <IRI>#Postcentral_sulcus</IRI>
         <Literal datatypeIRI="&xsd;anyURI">img/gyriAndSulci.png</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:seeAlso"/>
+        <IRI>#Posterior_central_gyrus</IRI>
+        <Literal datatypeIRI="&xsd;anyURI">http://en.wikipedia.org/w/index.php?oldid=424311960</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:seeAlso"/>
+        <IRI>#Posterior_central_gyrus</IRI>
+        <Literal datatypeIRI="&xsd;anyURI">img/gyriAndSulci.png</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:seeAlso"/>
+        <IRI>#Precentral_sulcus</IRI>
+        <Literal datatypeIRI="&xsd;anyURI">http://en.wikipedia.org/w/index.php?oldid=424311960</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:seeAlso"/>
@@ -543,7 +617,17 @@
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:seeAlso"/>
         <IRI>#Superior_frontal_gyrus</IRI>
+        <Literal datatypeIRI="&xsd;anyURI">http://en.wikipedia.org/w/index.php?oldid=424311960</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:seeAlso"/>
+        <IRI>#Superior_frontal_gyrus</IRI>
         <Literal datatypeIRI="&xsd;anyURI">img/gyriAndSulci.png</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:seeAlso"/>
+        <IRI>#Superior_frontal_sulcus</IRI>
+        <Literal datatypeIRI="&xsd;anyURI">http://en.wikipedia.org/w/index.php?oldid=424311960</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:seeAlso"/>
@@ -554,6 +638,11 @@
         <AnnotationProperty abbreviatedIRI="dc:description"/>
         <IRI>#Synapse</IRI>
         <Literal datatypeIRI="&xsd;string">Space between axon and dendrite.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:seeAlso"/>
+        <IRI>#Trans-occipital_sulcus</IRI>
+        <Literal datatypeIRI="&xsd;anyURI">http://en.wikipedia.org/w/index.php?oldid=424311960</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:seeAlso"/>
