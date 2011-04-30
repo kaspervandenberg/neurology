@@ -62,7 +62,7 @@
         <Class abbreviatedIRI="neuro:Anterior_central_gyrus"/>
         <ObjectSomeValuesFrom>
             <ObjectProperty abbreviatedIRI="mereology:part_of"/>
-            <Class abbreviatedIRI="neuro:Occipital_lobe"/>
+            <Class abbreviatedIRI="neuro:Parietal_lobe"/>
         </ObjectSomeValuesFrom>
     </SubClassOf>
     <SubClassOf>
@@ -118,7 +118,7 @@
         <Class abbreviatedIRI="neuro:Central_sulcus"/>
         <ObjectSomeValuesFrom>
             <ObjectProperty abbreviatedIRI="mereology:part_of"/>
-            <Class abbreviatedIRI="neuro:Occipital_lobe"/>
+            <Class abbreviatedIRI="neuro:Parietal_lobe"/>
         </ObjectSomeValuesFrom>
     </SubClassOf>
     <SubClassOf>
@@ -585,6 +585,34 @@
     <SubClassOf>
         <Class abbreviatedIRI="neuro:Parietal_lobe"/>
         <ObjectSomeValuesFrom>
+            <ObjectProperty abbreviatedIRI="mereology:contains_one"/>
+            <Class abbreviatedIRI="neuro:Central_sulcus"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class abbreviatedIRI="neuro:Parietal_lobe"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty abbreviatedIRI="mereology:contains_one"/>
+            <Class abbreviatedIRI="neuro:Postcentral_sulcus"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class abbreviatedIRI="neuro:Parietal_lobe"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty abbreviatedIRI="mereology:contains_one"/>
+            <Class abbreviatedIRI="neuro:Posterior_central_gyrus"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class abbreviatedIRI="neuro:Parietal_lobe"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty abbreviatedIRI="mereology:contains_one"/>
+            <Class abbreviatedIRI="neuro:Precentral_sulcus"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class abbreviatedIRI="neuro:Parietal_lobe"/>
+        <ObjectSomeValuesFrom>
             <ObjectProperty abbreviatedIRI="topology:connected_to"/>
             <Class abbreviatedIRI="neuro:Frontal_lobe"/>
         </ObjectSomeValuesFrom>
@@ -645,7 +673,7 @@
         <Class abbreviatedIRI="neuro:Postcentral_sulcus"/>
         <ObjectSomeValuesFrom>
             <ObjectProperty abbreviatedIRI="mereology:part_of"/>
-            <Class abbreviatedIRI="neuro:Occipital_lobe"/>
+            <Class abbreviatedIRI="neuro:Parietal_lobe"/>
         </ObjectSomeValuesFrom>
     </SubClassOf>
     <SubClassOf>
@@ -687,7 +715,7 @@
         <Class abbreviatedIRI="neuro:Posterior_central_gyrus"/>
         <ObjectSomeValuesFrom>
             <ObjectProperty abbreviatedIRI="mereology:part_of"/>
-            <Class abbreviatedIRI="neuro:Occipital_lobe"/>
+            <Class abbreviatedIRI="neuro:Parietal_lobe"/>
         </ObjectSomeValuesFrom>
     </SubClassOf>
     <SubClassOf>
@@ -778,7 +806,7 @@
         <Class abbreviatedIRI="neuro:Precentral_sulcus"/>
         <ObjectSomeValuesFrom>
             <ObjectProperty abbreviatedIRI="mereology:part_of"/>
-            <Class abbreviatedIRI="neuro:Occipital_lobe"/>
+            <Class abbreviatedIRI="neuro:Parietal_lobe"/>
         </ObjectSomeValuesFrom>
     </SubClassOf>
     <SubClassOf>
@@ -961,6 +989,13 @@
         <ObjectSomeValuesFrom>
             <ObjectProperty abbreviatedIRI="anatomic:superior"/>
             <Class abbreviatedIRI="neuro:Superior_frontal_gyrus"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class abbreviatedIRI="neuro:Superior_frontal_sulcus"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty abbreviatedIRI="mereology:part_of"/>
+            <Class abbreviatedIRI="neuro:Frontal_lobe"/>
         </ObjectSomeValuesFrom>
     </SubClassOf>
     <SubClassOf>
