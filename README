@@ -4,3 +4,9 @@ This repository contains information about neurology (the things I've learned so
 
 ontology:
 An OWL ontology, written with Protégé, about neorological concepts and their relations.
+
+documents:
+Texts about neurology and neuroscience found on the Internet.
+
+3dModel:
+Annatomy of the brain modeled in 3D with Blender.
